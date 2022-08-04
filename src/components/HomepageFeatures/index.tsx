@@ -10,32 +10,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: '云原生 && 自动化运维',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        提供通用的云原生应用模板解决方案（兼容OAM），及配合该模板的通用Operator能力，降低企业应用上云门槛，提供统一作业调度平台能力，解决运维大规模集中式调度常见，提升运维效率利器
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '运维应用工厂',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        提供运维应用前后端托管的运维应用开发框架及部署平台，前端配置化低代码开发，后端脚手架运维服务插件化集成。
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: '基础 && 数智运维服务',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        围绕IT运维工作服务台,“运维数据”的链路管理,基于“感知、决策、执行”的智能运维框架,提供基础运维、数据运维和Auto Pilot的无人值守、AIOps智能运维三个层次的运维体系;
       </>
     ),
   },
