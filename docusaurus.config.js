@@ -10,9 +10,9 @@ const config = {
   tagline: 'SREWorks 专注于以应用为中心的一站式“云原生”、“数智化”运维SaaS管理套件。提供企业的应用&资源管理及运维开发两大核心能力，帮助企业实现云原生应用&资源的交付运维',
   url: 'http://sreworks-demo.cfe09467bb7c4438aa71c0756f4cdf99c.cn-zhangjiakou.alicontainer.com/',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
+  onBrokenLinks: "ignore",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -71,9 +71,9 @@ const config = {
       // 为什么不用docs一起？ 因为 社区 不需要版本管理
       '@docusaurus/plugin-content-docs',
       {
+        routeBasePath: 'community',
         id: 'community',
         path: 'community',
-        routeBasePath: 'community',
         sidebarPath: require.resolve('./sidebarsCommunity.js'),
       },
     ],
@@ -101,12 +101,6 @@ const config = {
           target: '_self',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'index',
-            position: 'right',
-            label: '文档',
-          },
           {
             label: '常见问题',
             type: 'doc',
@@ -151,15 +145,6 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/index',
-              },
-            ],
-          },
           {
             title: 'Community',
             items: [
