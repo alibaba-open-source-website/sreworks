@@ -46,6 +46,10 @@ const config = {
               label: "1.1.x",
               path: "1.1.x",
             },
+            "1.2.x": {
+              label: "1.2.x",
+              path: "1.2.x",
+            },
           }
         },
         blog: {
@@ -104,12 +108,6 @@ const config = {
             label: '文档',
           },
           {
-            type: 'doc',
-            docId: 'api/index',
-            position: 'right',
-            label: 'API',
-          },
-          {
             label: '常见问题',
             type: 'doc',
             docId: 'index',
@@ -119,7 +117,7 @@ const config = {
           {
             label: '社区',
             type: 'doc',
-            docId: 'support',
+            docId: 'index',
             position: 'right',
             docsPluginId: 'community',
           },
@@ -158,7 +156,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/index',
               },
             ],
           },
