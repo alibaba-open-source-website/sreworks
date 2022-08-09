@@ -35,17 +35,17 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // 这里写自己的文档编辑地址
-          editUrl: 'https://github.com/alibaba-open-source-website/easyexcel/tree/main/',
+          editUrl: 'https://github.com/alibaba-open-source-website/sreworks/tree/main/',
           lastVersion: 'current',
           versions: {
             "current": {
-              label: "1.3.x",
+              label: "1.2.x",
               path: "current",
             },
-            // "1.4.x": {
-            //   label: "1.4.x",
-            //   path: "1.4.x",
-            // }
+            "1.1.x": {
+              label: "1.1.x",
+              path: "1.1.x",
+            },
           }
         },
         blog: {
@@ -59,6 +59,29 @@ const config = {
           customCss: require.resolve('./src/css/sreworks.css'),
         },
       }),
+    ],
+  ],
+  plugins: [
+    [
+      // 这里新增一个 多个doc的插件 专门用来 管理 社区 可以参考：https://docusaurus.io/docs/docs-multi-instance
+      // 为什么不用docs一起？ 因为 社区 不需要版本管理
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'community',
+        path: 'community',
+        routeBasePath: 'community',
+        sidebarPath: require.resolve('./sidebarsCommunity.js'),
+      },
+    ],
+    [
+      // 常见问题
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'qa',
+        path: 'qa',
+        routeBasePath: 'qa',
+        sidebarPath: require.resolve('./sidebarsQa.js'),
+      },
     ],
   ],
 
@@ -76,9 +99,29 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'index',
             position: 'right',
             label: '文档',
+          },
+          {
+            type: 'doc',
+            docId: 'api/index',
+            position: 'right',
+            label: 'API',
+          },
+          {
+            label: '常见问题',
+            type: 'doc',
+            docId: 'index',
+            position: 'right',
+            docsPluginId: 'qa',
+          },
+          {
+            label: '社区',
+            type: 'doc',
+            docId: 'support',
+            position: 'right',
+            docsPluginId: 'community',
           },
           {
             type: 'docsVersionDropdown',
