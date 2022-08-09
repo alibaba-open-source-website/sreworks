@@ -34,14 +34,13 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // 这里写自己的文档编辑地址
-          //editUrl: 'https://github.com/alibaba-open-source-website/sreworks/tree/main/',
-          lastVersion: 'current',
+          includeCurrentVersion: true,
+          //lastVersion: 'current',
           versions: {
-            "current": {
-              label: "v1.2",
-              path: "current",
-            }
+            //"current": {
+            //  label: "v1.2",
+            //  path: "current",
+            //}
           }
         },
         blog: {
