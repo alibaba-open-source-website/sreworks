@@ -97,23 +97,14 @@ const config = {
         logo: {
           alt: 'sreworks Logo',
           src: 'img/sreworks.png',
-          href: 'http://sreworks-demo.cfe09467bb7c4438aa71c0756f4cdf99c.cn-zhangjiakou.alicontainer.com/',
+          href: '/',
           target: '_self',
         },
         items: [
           {
-            label: '常见问题',
-            type: 'doc',
-            docId: 'index',
+            label: '在线演示',
             position: 'right',
-            docsPluginId: 'qa',
-          },
-          {
-            label: '社区',
-            type: 'doc',
-            docId: 'index',
-            position: 'right',
-            docsPluginId: 'community',
+            href: 'https://wj.qq.com/s2/10565748/53da/'
           },
           {
             type: 'docsVersionDropdown',
@@ -146,35 +137,20 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Community',
+            title: '社区',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
+                label: 'Github',
                 href: 'https://github.com/alibaba/sreworks',
-              },
+              },{
+                label: '钉钉交流群',
+                href: "#",
+              },{
+                label: '微信交流群',
+                href: "#",
+              }
             ],
-          },
+          }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} SREWorks, Inc. Built with Docusaurus`,
       },
