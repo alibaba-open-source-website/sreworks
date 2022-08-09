@@ -14,7 +14,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        提供通用的云原生应用模板解决方案（兼容OAM），及配合该模板的通用Operator能力，降低企业应用上云门槛，提供统一作业调度平台能力，解决运维大规模集中式调度常见，提升运维效率利器
+        提供通用的云原生应用模板解决方案（兼容OAM），及配合该模板的通用Operator能力，降低企业应用上云门槛，提供统一作业调度平台能力，解决运维大规模集中式调度常见，提升运维效率利器。
       </>
     ),
   },
@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        围绕IT运维工作服务台,“运维数据”的链路管理,基于“感知、决策、执行”的智能运维框架,提供基础运维、数据运维和Auto Pilot的无人值守、AIOps智能运维三个层次的运维体系;
+        围绕IT运维工作服务台,“运维数据”的链路管理,基于“感知、决策、执行”的智能运维框架,提供基础运维、数据运维和Auto Pilot的无人值守、AIOps智能运维三个层次的运维体系。
       </>
     ),
   },
