@@ -35,7 +35,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // 这里写自己的文档编辑地址
-          editUrl: 'https://github.com/alibaba-open-source-website/sreworks/tree/main/',
+          //editUrl: 'https://github.com/alibaba-open-source-website/sreworks/tree/main/',
           lastVersion: 'current',
           versions: {
             "current": {
