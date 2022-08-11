@@ -4,6 +4,7 @@
 import ssl
 import json
 import os
+import argparse
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -17,12 +18,22 @@ except ImportError:
 
 self_path = os.path.split(os.path.realpath(__file__))[0]
 
-TOKEN = "**********"
-USER_AGENT = "ali-opensource"
-ENDPOINT = "https://www.yuque.com/api/v2"
-NAMESPACE = "sreworks-doc/docs"
-LOCAL_PATH = "./docs"
-SIDEBARS_FILE = "./sidebars.json"
+parser = argparse.ArgumentParser(description='yuque documents sync tool')
+parser.add_argument('--token', type=str, dest="token", required=True, help="user's token")
+parser.add_argument('--namespace', type=str, dest="namespace", required=True, help="document's namespace like: sreworks-doc/test ")
+parser.add_argument('--user-agent', type=str, dest="user_agent", default="ali-opensource", required=False, help="user agent in api http header")
+parser.add_argument('--endpoint', type=str, dest="endpoint", default="https://www.yuque.com/api/v2", help="yueque endpoint")
+parser.add_argument('--docs-path', type=str, dest="local_docs_path", default="./docs", required=False, help="docusaurus's docs path")
+parser.add_argument('--sidebars-file', type=str, dest="sidebars_file", default="./sidebars.json", required=False, help="docusaurus's sidebars.json file")
+args = parser.parse_args()
+
+
+TOKEN = args.token
+USER_AGENT = args.user_agent
+ENDPOINT = args.endpoint
+NAMESPACE = args.namespace
+LOCAL_PATH = args.local_docs_path
+SIDEBARS_FILE = args.sidebars_file
 
 def yuque(uri):
     headers = {
