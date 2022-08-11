@@ -51,7 +51,7 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve('./src/css/sreworks.css'),
+          customCss: require.resolve('./src/css/sreworks.scss'),
         },
       }),
     ],
@@ -78,6 +78,7 @@ const config = {
         sidebarPath: require.resolve('./sidebarsQa.js'),
       },
     ],
+    'docusaurus-plugin-sass'
   ],
 
   themeConfig:
@@ -93,20 +94,24 @@ const config = {
         },
         items: [
           {
-            label: '在线演示',
+            html: "<span>在线演示</span>",
             position: 'right',
             href: 'https://wj.qq.com/s2/10565748/53da/'
+          },
+          {
+            html: "<button class='button button--primary'>申请体验</button>",
+            position: 'right',
+            href: 'https://sreworks.c38cca9c474484bdc9873f44f733d8bcd.cn-beijing.alicontainer.com/',
           },
           {
             type: 'docsVersionDropdown',
             position: 'right',
             dropdownActiveClassDisabled: true
           },
-          // { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/alibaba/sreworks',
-            label: 'GitHub',
+            html: "<div class='github-link-logo'><a href='https://github.com/alibaba/sreworks'></a></div>",
             position: 'right',
+            href: 'https://github.com/alibaba/sreworks',
           },
         ],
       },
@@ -134,11 +139,9 @@ const config = {
                 label: 'Github',
                 href: 'https://github.com/alibaba/sreworks',
               },{
-                label: '钉钉交流群',
-                href: "#",
+                html: '<div class="wechat"> <a class="wechat-label">钉钉交流群</a> <a class="wechat-img" rel="noreferrer noopener" aria-label="Wechat Group"><img src="https://static.kubevela.net/images/barnett-wechat.jpg" alt="Broker wechat to add you into the user group."></div>'
               },{
-                label: '微信交流群',
-                href: "#",
+                html: '<div class="wechat"> <a class="wechat-label">微信交流群</a> <a class="wechat-img" rel="noreferrer noopener" aria-label="Wechat Group"><img src="https://static.kubevela.net/images/barnett-wechat.jpg" alt="Broker wechat to add you into the user group."></div>'
               }
             ],
           }
