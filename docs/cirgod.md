@@ -55,7 +55,7 @@ title: 3.3 数智运维
 <a name="viSB3"></a>
 
 #### 1.3.1 平台整体架构
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179550718-4aa0df4b-26e4-44ec-8d7d-a768c6588c7a.png#clientId=u94e1755f-ee9d-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=774&id=uef9169e1&margin=%5Bobject%20Object%5D&name=image.png&originHeight=774&originWidth=1210&originalType=binary&ratio=1&rotation=0&showTitle=false&size=118851&status=done&style=none&taskId=u480545f3-93a0-4f18-a80f-a186180243c&title=&width=1210)
+![image.png](./pictures/1648179550718-4aa0df4b-26e4-44ec-8d7d-a768c6588c7a.png)
 
 
 
@@ -65,7 +65,7 @@ title: 3.3 数智运维
 
 - 可观测数据/业务数据采集架构
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179550878-281b449e-8674-4b63-9531-946b7f007c0d.png#clientId=ud465b09c-12b3-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=406&id=ubdd4aa99&margin=%5Bobject%20Object%5D&name=image.png&originHeight=406&originWidth=829&originalType=binary&ratio=1&rotation=0&showTitle=false&size=68314&status=done&style=none&taskId=ubc3127c9-61f1-43d5-80ac-864f44d888a&title=&width=829)
+![image.png](./pictures/1648179550878-281b449e-8674-4b63-9531-946b7f007c0d.png)
 
 <a name="zJVO2"></a>
 
@@ -73,7 +73,7 @@ title: 3.3 数智运维
 
 - 标准化运维数仓体系架构
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179551112-a3269734-afef-49c3-9dc2-608ec158af94.png#clientId=u5bd60be3-8c39-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=475&id=u5672c9b5&margin=%5Bobject%20Object%5D&name=image.png&originHeight=950&originWidth=1804&originalType=binary&ratio=1&rotation=0&showTitle=false&size=356922&status=done&style=none&taskId=u601ae54e-440d-4d6a-971c-33a798c1a38&title=&width=902)
+![image.png](./pictures/1648179551112-a3269734-afef-49c3-9dc2-608ec158af94.png)
 <a name="zL5Ju"></a>
 
 ### 1.4 数据运维平台使用指南
@@ -82,7 +82,7 @@ title: 3.3 数智运维
 
 #### 1.4.1 资产目录/数据资产(数仓模型/实体管理)
 
-1. 进入**数据运维平台**，导航至**资产目录**页面，可以查看平台内置的三大数据主题和九个数据域，新建数据仓库模型前先规划该模型的主题域归属。<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179551259-d1320b0d-d02d-4507-8cc2-37bb21a68f30.png#clientId=u61c3bff1-55dc-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=590&id=ue86c4b58&margin=%5Bobject%20Object%5D&name=image.png&originHeight=590&originWidth=2544&originalType=binary&ratio=1&rotation=0&showTitle=false&size=215515&status=done&style=none&taskId=ub5af60fe-9810-4c38-9a5b-e43ff7e63d6&title=&width=2544)<br />2. 导航至**数据资产**页面，数仓分层规范位于左侧导航栏，选择合适分层后，即可左上角新**建模型/实体**按钮，即可新建数仓模型。数仓数据具有生命周期管理功能，用户可按需配置数据生命周期。<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179551487-20081d23-8c38-4ec4-b9d8-407bfa13b74d.png#clientId=u61c3bff1-55dc-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=622&id=u97cee4a4&margin=%5Bobject%20Object%5D&name=image.png&originHeight=622&originWidth=2551&originalType=binary&ratio=1&rotation=0&showTitle=false&size=583630&status=done&style=none&taskId=u37785f86-ed02-44bc-b06b-fcbcd705bc9&title=&width=2551)<br />        3. 新建完成后，数仓模型名称、分区规范，分层以及归属数据域均不可修改；点击模型列表模型名称列超链，即可进入列信息修改，默认会内置不可修改的ds分区字段，并强烈建议指定ID字段（用于记录唯一标识），数仓会默认按照ID字段进行记录的更新。<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179551636-a85643a5-1101-43c7-8a64-93ccb316fcfc.png#clientId=u61c3bff1-55dc-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=716&id=VhzbD&margin=%5Bobject%20Object%5D&name=image.png&originHeight=716&originWidth=2549&originalType=binary&ratio=1&rotation=0&showTitle=false&size=476321&status=done&style=none&taskId=u3e5ff155-148e-4495-9cf7-6a27fbb8fb2&title=&width=2549)
+1. 进入**数据运维平台**，导航至**资产目录**页面，可以查看平台内置的三大数据主题和九个数据域，新建数据仓库模型前先规划该模型的主题域归属。<br />![image.png](./pictures/1648179551259-d1320b0d-d02d-4507-8cc2-37bb21a68f30.png)<br />2. 导航至**数据资产**页面，数仓分层规范位于左侧导航栏，选择合适分层后，即可左上角新**建模型/实体**按钮，即可新建数仓模型。数仓数据具有生命周期管理功能，用户可按需配置数据生命周期。<br />![image.png](./pictures/1648179551487-20081d23-8c38-4ec4-b9d8-407bfa13b74d.png)<br />        3. 新建完成后，数仓模型名称、分区规范，分层以及归属数据域均不可修改；点击模型列表模型名称列超链，即可进入列信息修改，默认会内置不可修改的ds分区字段，并强烈建议指定ID字段（用于记录唯一标识），数仓会默认按照ID字段进行记录的更新。<br />![image.png](./pictures/1648179551636-a85643a5-1101-43c7-8a64-93ccb316fcfc.png)
 
 <a name="b5EGH"></a>
 
@@ -90,7 +90,7 @@ title: 3.3 数智运维
 
 1.数据采集：
 
-方式一、依托作业平台方式，开放采集场景作业服务。用户可自主开发采集场景作业，支持关联数仓或指标。关联数仓模型的采集数据将落地到数仓管理，关联指标的采集数据可支持推送消息队列topic(sreworks-dataops-metric-data)，支持下游数据消费。<br />           ![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179551876-7cd223a8-5ef0-4462-bfb3-2afb0158ff65.png#clientId=u90ac75c1-5fc5-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=548&id=AVsDF&margin=%5Bobject%20Object%5D&name=image.png&originHeight=548&originWidth=1323&originalType=binary&ratio=1&rotation=0&showTitle=false&size=214648&status=done&style=none&taskId=u48940fdd-5dd5-42d1-b63f-2663d192122&title=&width=1323)![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179552075-0db95edf-c92b-4546-8e7c-1aea092566fb.png#clientId=u90ac75c1-5fc5-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=233&id=ufc4ba78b&margin=%5Bobject%20Object%5D&name=image.png&originHeight=233&originWidth=1353&originalType=binary&ratio=1&rotation=0&showTitle=false&size=38461&status=done&style=none&taskId=u0035e33c-9ab9-45bc-892b-64653a5bfb6&title=&width=1353)
+方式一、依托作业平台方式，开放采集场景作业服务。用户可自主开发采集场景作业，支持关联数仓或指标。关联数仓模型的采集数据将落地到数仓管理，关联指标的采集数据可支持推送消息队列topic(sreworks-dataops-metric-data)，支持下游数据消费。<br />           ![image.png](./pictures/1648179551876-7cd223a8-5ef0-4462-bfb3-2afb0158ff65.png)![image.png](./pictures/1648179552075-0db95edf-c92b-4546-8e7c-1aea092566fb.png)
 
 方式二、API方式，规范化灵活接入。数仓服务提供数据推送API，用户可以不用依赖作业平台采集服务就可实现数据录入数据仓库，通过SREWorks数据服务平台进行管理。
 
@@ -158,7 +158,7 @@ body参数
 
 数据消费通过数据接口将数据仓库的生成数据API，让数据用起来，目前优先支持mysql和es两种数据源。<br />开箱服务中，已经内置了30+数据接口。用户可以根据需要和页面提示自由添加所需数据接口。接口使用方式，数据集dataset的service([http://prod-dataops-dataset.sreworks-dataops.svc.cluster.local:80](http://prod-dataops-dataset.sreworks-dataops.svc.cluster.local:80))作为host，接口path作为url_path。
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179552273-66d9ac6c-5eeb-4a5a-8312-3b40ce660695.png#clientId=uab855e94-f823-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=401&id=u39ad36f1&margin=%5Bobject%20Object%5D&name=image.png&originHeight=401&originWidth=874&originalType=binary&ratio=1&rotation=0&showTitle=false&size=85716&status=done&style=none&taskId=u4fd7e8f5-c5a1-42b6-840e-0648f05159b&title=&width=874)
+![image.png](./pictures/1648179552273-66d9ac6c-5eeb-4a5a-8312-3b40ce660695.png)
 
 
 
@@ -208,4 +208,4 @@ body参数
 <a name="OeE1E"></a>
 
 ### 2.3 平台架构
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179552482-7f253417-4ca3-45f4-a54a-a278ea435a40.png#clientId=u69becf0d-db53-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=388&id=u1e98dac2&margin=%5Bobject%20Object%5D&name=image.png&originHeight=776&originWidth=1578&originalType=binary&ratio=1&rotation=0&showTitle=false&size=84189&status=done&style=none&taskId=u7b5d7f35-eabf-48b2-93c9-864641ec47c&title=&width=789)<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1659607128022-b5cad94f-5f83-46f6-a695-7dd64f5d525c.png#clientId=u04aeb185-8d61-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=597&id=uc816278a&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1194&originWidth=2020&originalType=binary&ratio=1&rotation=0&showTitle=false&size=317451&status=done&style=none&taskId=u940938a3-4474-4318-a0d2-eaeaa9c465e&title=&width=1010)
+![image.png](./pictures/1648179552482-7f253417-4ca3-45f4-a54a-a278ea435a40.png)<br />![image.png](./pictures/1659607128022-b5cad94f-5f83-46f6-a695-7dd64f5d525c.png)

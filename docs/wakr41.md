@@ -45,7 +45,7 @@ title: --- 备用文档3.4 智能运维服务
 ## 3，平台架构
 <a name="EZYow"></a>
 
-## ![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179553610-e77b644a-61ce-4bb9-90ad-3fea587fcafc.png#clientId=ucc0df092-be7d-4&from=paste&height=439&id=u4dc6815b&margin=%5Bobject%20Object%5D&name=image.png&originHeight=439&originWidth=785&originalType=binary&ratio=1&size=62543&status=done&style=none&taskId=ubb1f72ec-7afe-474f-ae5f-1ec915c4c8c&width=785)
+## ![image.png](./pictures/1648179553610-e77b644a-61ce-4bb9-90ad-3fea587fcafc.png)
 <a name="hZGa4"></a>
 
 ## 4，快速入门

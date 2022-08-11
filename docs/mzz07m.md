@@ -14,7 +14,7 @@ title: 2.2 源码构建安装
 - 一个可用于上传构建容器镜像仓库(执行`docker push`推送镜像)
 - 源码构建包含通过Pod构建镜像环节，所需服务器资源量大于快速构建方案(3台4核16G)
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2022/jpeg/47616/1646727574970-7826d0ea-3ab4-4da0-a6cf-3338b178920c.jpeg)
+![](./pictures/1646727574970-7826d0ea-3ab4-4da0-a6cf-3338b178920c.jpeg.png)
 
 <a name="nIrWm"></a>
 
