@@ -21,10 +21,10 @@ self_path = os.path.split(os.path.realpath(__file__))[0]
 parser = argparse.ArgumentParser(description='yuque documents sync tool')
 parser.add_argument('--token', type=str, dest="token", required=True, help="user's token")
 parser.add_argument('--namespace', type=str, dest="namespace", required=True, help="document's namespace like: sreworks-doc/test ")
-parser.add_argument('--user-agent', type=str, dest="user_agent", default="ali-opensource", required=False, help="user agent in api http header")
-parser.add_argument('--endpoint', type=str, dest="endpoint", default="https://www.yuque.com/api/v2", help="yueque endpoint")
-parser.add_argument('--docs-path', type=str, dest="local_docs_path", default="./docs", required=False, help="docusaurus's docs path")
-parser.add_argument('--sidebars-file', type=str, dest="sidebars_file", default="./sidebars.json", required=False, help="docusaurus's sidebars.json file")
+parser.add_argument('--user-agent', type=str, dest="user_agent", default="ali-opensource", required=False, help="user agent in api http header (default: %(default)s)")
+parser.add_argument('--endpoint', type=str, dest="endpoint", default="https://www.yuque.com/api/v2", help="yueque endpoint (default: %(default)s)")
+parser.add_argument('--docs-path', type=str, dest="local_docs_path", default="./docs", required=False, help="docusaurus's docs path (default: %(default)s)")
+parser.add_argument('--sidebars-file', type=str, dest="sidebars_file", default="./sidebars.json", required=False, help="docusaurus's sidebars.json file (default: %(default)s)")
 args = parser.parse_args()
 
 
@@ -48,10 +48,17 @@ def mdx_body(meta, content):
     meta_content += "title: " + meta["title"] + "\n"
     meta_content += "---\n\n"
 
-    # ```javascript 会在mdx中当做jsx代码执行，需要变成```json
+    # js相关代码需要多一个换行
     content = content.replace('```json', "```json\n")
     content = content.replace('```javascript', "```js\n")
+
+    # 代码块中的export特别敏感，还没想到好的办法，先切分开
     content = content.replace('export', "ex port")
+
+    # <a name="8plYw"></a>
+    # ### 核心场景
+    # a标签和标题处于上下行时会出现问题，需要中间加一个空行
+    content = content.replace("</a>\n#", "</a>\n\n#")
 
     return meta_content + content
 
@@ -65,7 +72,7 @@ for toc in toc_list:
        "parent_uuid": toc["parent_uuid"],
        "depth": toc["depth"],
        "lark_type": toc["type"],
-       "collapsed": False
+       "collapsed": True
     }
     
     if toc["type"] == "TITLE":
@@ -96,9 +103,6 @@ for k,v in toc_map.items():
 sidebars_data = []
 for toc in toc_list:
     if toc["depth"] == 1:
-       # 第一层收起
-       if toc_map[toc["uuid"]].get("collapsed") == False:
-           toc_map[toc["uuid"]]["collapsed"] = True
        sidebars_data.append(toc_map[toc["uuid"]])
 
 

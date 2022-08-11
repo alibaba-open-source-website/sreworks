@@ -3,6 +3,7 @@ title: ---备用文档开发一个前端组件
 ---
 
 <a name="Bui3v"></a>
+
 ### 1、开发约定
 >    1.  组件必须在  src/modules/common/FrontEndDesigner/core/widgets/   目录下
 >    1. 组件的命名建议以驼峰式命名,第一个字母大写。
@@ -26,6 +27,7 @@ icon.svg**    --**--组件图标
 其他的属性包括：应用信息、用户信息、路由信息等，可按需获取
 
 <a name="v2Fpo"></a>
+
 ### 2、meta定义
 
    1. 标准格式

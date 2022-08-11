@@ -3,8 +3,10 @@ title: 2.2 源码构建安装
 ---
 
 <a name="kliWz"></a>
+
 # 1. SREWorks源码构建
 <a name="uSNSk"></a>
+
 ### 构建环境准备
 
 - Kubernetes 的版本需要大于等于 **1.20**
@@ -15,6 +17,7 @@ title: 2.2 源码构建安装
 ![](https://intranetproxy.alipay.com/skylark/lark/0/2022/jpeg/47616/1646727574970-7826d0ea-3ab4-4da0-a6cf-3338b178920c.jpeg)
 
 <a name="nIrWm"></a>
+
 ### 拉取 SREWorks 项目源码
 ```shell
 git clone http://github.com/alibaba/sreworks.git -b v1.2 sreworks
@@ -23,6 +26,7 @@ SW_ROOT=$(pwd)
 ```
 
 <a name="x9uQn"></a>
+
 ### 构建 SREWorks 底座容器镜像
 在sreworks目录下，直接在本地执行构建脚本
 ```shell
@@ -44,6 +48,7 @@ sreworks-registry.cn-beijing.cr.aliyuncs.com/sreworks/swcli-builtin-package:v1.2
 ```
 
 <a name="HYQrQ"></a>
+
 ### 上传SREWorks到仓库
 将构建产物发布上传到镜像仓库，`SW_REPO`变量替换成用户自己准备的容器镜像仓库。
 ```shell
@@ -55,6 +60,7 @@ docker login --username=sre****s your-registry.***.com
 
 
 <a name="jiRmc"></a>
+
 # 2. SREWorks部署&构建运维应用容器镜像
  步骤与快速安装大致相同，替换helm install参数， 触发运维应用来自源码的容器镜像构建，注意按照附录1和附录2替换参数
 ```shell
@@ -69,6 +75,7 @@ helm install sreworks $SW_ROOT/chart/sreworks-chart \
 ```
 
 <a name="jPt3U"></a>
+
 # 附录1. Helm安装参数清单
 如果需要构建完的运维应用上传到自定义容器镜像仓库，请在执行helm安装命令时候传入以下的参数
 ```shell
@@ -96,10 +103,12 @@ helm install sreworks $SW_ROOT/chart/sreworks-chart \
 
 ```
 <a name="CdF5g"></a>
+
 # 附录2. 源码构建依赖资源清单
 在纯内网构建或者部分资源替换场景，需要用户自行准备资源，可参考下面的清单。
 
 <a name="NQ8Vf"></a>
+
 ### 底座构建依赖资源参数
 在执行 `./build.sh` 命令前可传入下列的环境变量来改变资源地址，如不传入则使用默认值。
 ```bash
@@ -127,6 +136,7 @@ ex port SREWORKS_BUILTIN_PACKAGE_URL="https://sreworks.oss-cn-beijing.aliyuncs.c
 ```
 
 <a name="V9FYX"></a>
+
 ### 运维应用构建依赖资源参数
 在执行helm install/upgrade 命令的时候，可以选择性传入以下参数，使得运维应用可以在内网进行构建及部署。
 ```bash
