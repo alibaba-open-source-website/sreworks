@@ -33,14 +33,14 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebars.json'),
           includeCurrentVersion: true,
-          //lastVersion: 'current',
+          lastVersion: 'v1.2',
+          editUrl: function(params){
+             docName = params.permalink.split("/")[params.permalink.split("/").length - 1].split(".")[0];
+             return "https://www.yuque.com/sreworks-doc/docs/" + docName;
+          },
           versions: {
-            //"current": {
-            //  label: "v1.2",
-            //  path: "current",
-            //}
           }
         },
         blog: {
