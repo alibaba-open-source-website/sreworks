@@ -95,17 +95,19 @@ const config = {
     ({
       navbar: {
         title: 'SREWorks',
+        hideOnScroll:true,
         logo: {
           alt: 'sreworks Logo',
           src: 'img/sreworks.png',
           href: '/',
           target: '_self',
         },
+
         items: [
           {
-            html: "<span>在线演示</span>",
+            html: "<span>常见问题</span>",
             position: 'right',
-            href: 'https://wj.qq.com/s2/10565748/53da/'
+            to: 'docs/next/iwa896'
           },
           {
             html: "<button class=' navbar__item button button--primary'>申请体验</button>",
