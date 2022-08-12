@@ -19,7 +19,7 @@ SREWorks套件自身也是云原生化的应用，并且采用运维中台思想
 <a name="ULhwd"></a>
 
 ### 云原生应用管理
-企业在云原生化转型的道路上，不仅是来自开发对软件产品技术架构的升级，同样对于运维也需要将资源进行云原生化管理的转变。我们将包含基础设施的企业云资源统一抽象到以Kubernetes集群进行管理，企业云应用实例都运行在集群之上，如下图所示，我们可以清晰梳理出顶层抽象模型：管理人员的团队组织、管理应用实例的应用中心、管理资源的集群。<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179548966-21f6851d-211c-4523-9939-86645e71141b.png#clientId=ub11be931-f7d3-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=344&id=KmCIj&margin=%5Bobject%20Object%5D&name=image.png&originHeight=688&originWidth=1798&originalType=binary&ratio=1&rotation=0&showTitle=false&size=147345&status=done&style=none&taskId=u8bcd4671-f5ef-4a61-ae27-64c71021e68&title=&width=899)
+企业在云原生化转型的道路上，不仅是来自开发对软件产品技术架构的升级，同样对于运维也需要将资源进行云原生化管理的转变。我们将包含基础设施的企业云资源统一抽象到以Kubernetes集群进行管理，企业云应用实例都运行在集群之上，如下图所示，我们可以清晰梳理出顶层抽象模型：管理人员的团队组织、管理应用实例的应用中心、管理资源的集群。<br />![image.png](./pictures/1648179548966-21f6851d-211c-4523-9939-86645e71141b.png)
 <a name="XW0zo"></a>
 
 #### 团队
@@ -33,7 +33,7 @@ SREWorks套件自身也是云原生化的应用，并且采用运维中台思想
 #### 应用
 企业应用抽象了企业的业务价值承载，包含大数据，数据库，中间件，业务系统都以应用进行描述
 
-SREWorks里的的核心业务模型也是围绕上面的三大对象：团队、应用、集群。成员都在团队中，团队持有应用和集群相关资源。由于SREWorks自身也是云原生化的，也是部署在Kubernetes集群中，用户在SREWorks中创建团队，一套SREWorks管理套件可以接入1到多个Kubernetes集群，集群归属为团队的资源。在团队的成员可以创建应用，并部署在该团队持有的Kubernetes集群之上。<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179549131-763576d6-7b64-4ee8-835b-09e8edfe62d5.png#clientId=u241ac728-f027-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=375&id=LZJ2p&margin=%5Bobject%20Object%5D&name=image.png&originHeight=750&originWidth=1686&originalType=binary&ratio=1&rotation=0&showTitle=false&size=187398&status=done&style=none&taskId=ubb8ae160-80fc-4f62-a82c-fed6647f80e&title=&width=843)
+SREWorks里的的核心业务模型也是围绕上面的三大对象：团队、应用、集群。成员都在团队中，团队持有应用和集群相关资源。由于SREWorks自身也是云原生化的，也是部署在Kubernetes集群中，用户在SREWorks中创建团队，一套SREWorks管理套件可以接入1到多个Kubernetes集群，集群归属为团队的资源。在团队的成员可以创建应用，并部署在该团队持有的Kubernetes集群之上。<br />![image.png](./pictures/1648179549131-763576d6-7b64-4ee8-835b-09e8edfe62d5.png)
 
 <a name="F9Geg"></a>
 
@@ -52,7 +52,7 @@ SREWorks里的的核心业务模型也是围绕上面的三大对象：团队、
 <a name="pMEc7"></a>
 
 #### 配置化低代码
-前端技术的发展日新月异，经历了从前端三剑客（HTML, CSS，JavaScript）、到代表性的Jquery，angularjs时代，前端已经进入了React&Vue&Angular 三大框架统治时代，在运维开发领域的前端开发由于团队属性，始终难于追赶前端流行趋势，同时反观运维开发的属性，大部分页面为企业后端控制台类系统，不太需要很酷炫的交互设计，针对这些特点，我们在SREWorks里创新性地设计了一套Serverless体验的前端开发模式。<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179549337-945b6ba4-147e-4382-acee-a565a793791a.png#clientId=ud91bd287-5bdf-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=572&id=u6e7a7c6e&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1144&originWidth=1814&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1089328&status=done&style=none&taskId=uab1a2cfb-e78c-413a-a425-28aa6fa24e1&title=&width=907)
+前端技术的发展日新月异，经历了从前端三剑客（HTML, CSS，JavaScript）、到代表性的Jquery，angularjs时代，前端已经进入了React&Vue&Angular 三大框架统治时代，在运维开发领域的前端开发由于团队属性，始终难于追赶前端流行趋势，同时反观运维开发的属性，大部分页面为企业后端控制台类系统，不太需要很酷炫的交互设计，针对这些特点，我们在SREWorks里创新性地设计了一套Serverless体验的前端开发模式。<br />![image.png](./pictures/1648179549337-945b6ba4-147e-4382-acee-a565a793791a.png)
 
 <a name="IoEtY"></a>
 

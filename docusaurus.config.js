@@ -22,9 +22,18 @@ const config = {
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
+
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      zh: {
+        label: '简体中文',
+      },
+    },
   },
 
   presets: [
@@ -112,6 +121,10 @@ const config = {
             html: "<div class='github-link-logo'><a href='https://github.com/alibaba/sreworks'></a></div>",
             position: 'right',
             href: 'https://github.com/alibaba/sreworks',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
         ],
       },

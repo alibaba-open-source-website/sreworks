@@ -8,7 +8,7 @@ title: --- 备用文档 4.2.2 运维前端开发
 <a name="QwDWn"></a>
 
 # 2. 菜单节点树
-菜单节点树用于配置用户前端页面的路由树，类似传统的文件系统目录树，每个节点即一个页面。<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179562674-f331a6a2-1e88-4553-93bd-e6448399033c.png#clientId=ua7af52a7-8826-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=785&id=u581ea18e&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1570&originWidth=2430&originalType=binary&ratio=1&rotation=0&showTitle=false&size=296313&status=done&style=none&taskId=u08779dc3-be72-40ee-81d2-47c0a1e9384&title=&width=1215)<br />**菜单路径: **用户访问页面时候在浏览器中会键入的URL段，一般由字母、数字、下划线、横杠组成。
+菜单节点树用于配置用户前端页面的路由树，类似传统的文件系统目录树，每个节点即一个页面。<br />![image.png](./pictures/1648179562674-f331a6a2-1e88-4553-93bd-e6448399033c.png)<br />**菜单路径: **用户访问页面时候在浏览器中会键入的URL段，一般由字母、数字、下划线、横杠组成。
 
 <a name="HwDBY"></a>
 
@@ -182,7 +182,7 @@ xxxx
 <a name="sPgBY"></a>
 
 ### 6.3.1 表单项基础配置——基础定义
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179562836-f47414e9-be6d-4415-8b6a-6ace0973505d.png#clientId=uc2c48617-03a1-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=83&id=u6d5bbdc7&margin=%5Bobject%20Object%5D&name=image.png&originHeight=166&originWidth=1596&originalType=binary&ratio=1&rotation=0&showTitle=false&size=78106&status=done&style=none&taskId=u6b53fb55-bc92-4b5e-95e7-297a913c388&title=&width=798)
+![image.png](./pictures/1648179562836-f47414e9-be6d-4415-8b6a-6ace0973505d.png)
 <a name="CqVeJ"></a>
 
 ### 6.3.2 表单项高级配置——参数JSON配置
@@ -199,7 +199,7 @@ xxxx
 
 ### 6.3.3 常见表单项配置参考
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179563059-2e368264-bfea-4b6e-8003-78ebaa9ff2f7.png#clientId=u84f2c1b4-ce0e-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=172&id=uclqU&margin=%5Bobject%20Object%5D&name=image.png&originHeight=540&originWidth=804&originalType=binary&ratio=1&rotation=0&showTitle=false&size=60053&status=done&style=none&taskId=ud00579da-7580-4eb7-845b-dfd646af5aa&title=&width=256)![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179563325-16eb655f-3a1c-4a82-8d10-a8106d2b69b7.png#clientId=u84f2c1b4-ce0e-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=175&id=Dv1gM&margin=%5Bobject%20Object%5D&name=image.png&originHeight=540&originWidth=628&originalType=binary&ratio=1&rotation=0&showTitle=false&size=44852&status=done&style=none&taskId=u61952709-7715-4eb6-8bfa-d1c9b5b227a&title=&width=203)<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179563545-8fd4e110-bc57-426e-89b9-2aff03178b8a.png#clientId=u84f2c1b4-ce0e-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=190&id=Jh8od&margin=%5Bobject%20Object%5D&name=image.png&originHeight=510&originWidth=546&originalType=binary&ratio=1&rotation=0&showTitle=false&size=39484&status=done&style=none&taskId=ufa8c17f8-0241-4120-99ce-669f3ee4147&title=&width=203)![image.png](https://cdn.nlark.com/yuque/0/2022/png/703896/1648179563746-99ede3d5-1631-42b7-b93e-f31509d4b57d.png#clientId=u84f2c1b4-ce0e-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=174&id=Nhvsn&margin=%5Bobject%20Object%5D&name=image.png&originHeight=462&originWidth=684&originalType=binary&ratio=1&rotation=0&showTitle=false&size=38576&status=done&style=none&taskId=u16476353-c25f-4aa9-bef6-c770a3c4e53&title=&width=258)
+![image.png](./pictures/1648179563059-2e368264-bfea-4b6e-8003-78ebaa9ff2f7.png)![image.png](./pictures/1648179563325-16eb655f-3a1c-4a82-8d10-a8106d2b69b7.png)<br />![image.png](./pictures/1648179563545-8fd4e110-bc57-426e-89b9-2aff03178b8a.png)![image.png](./pictures/1648179563746-99ede3d5-1631-42b7-b93e-f31509d4b57d.png)
 
 <a name="J8InT"></a>
 

@@ -35,6 +35,9 @@ NAMESPACE = args.namespace
 LOCAL_PATH = args.local_docs_path
 SIDEBARS_FILE = args.sidebars_file
 
+if not os.path.exists(LOCAL_PATH + "/pictures"):
+    os.makedirs(LOCAL_PATH + "/pictures")
+
 def yuque(uri):
     headers = {
         "User-Agent": USER_AGENT,
@@ -59,6 +62,15 @@ def mdx_body(meta, content):
     # ### 核心场景
     # a标签和标题处于上下行时会出现问题，需要中间加一个空行
     content = content.replace("</a>\n#", "</a>\n\n#")
+
+    # 遍历图片并下载后替换路径
+    for r in content.replace('![](', '![image.png](').split(".png]("):
+        if not r.startswith("http"): continue
+        pic = r.split(")")[0]
+        pic_name = pic.split(".png#")[0].split("/")[-1] + ".png"
+        command = "wget '%s' -O %s/pictures/%s" % (pic, LOCAL_PATH, pic_name)
+        os.popen(command)
+        content = content.replace(pic, "./pictures/" + pic_name)
 
     return meta_content + content
 
