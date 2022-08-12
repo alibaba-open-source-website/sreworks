@@ -108,7 +108,7 @@ const config = {
             href: 'https://wj.qq.com/s2/10565748/53da/'
           },
           {
-            html: "<button class='button button--primary'>申请体验</button>",
+            html: "<button class=' navbar__item button button--primary'>申请体验</button>",
             position: 'right',
             href: 'https://sreworks.c38cca9c474484bdc9873f44f733d8bcd.cn-beijing.alicontainer.com/',
           },
@@ -118,13 +118,13 @@ const config = {
             dropdownActiveClassDisabled: true
           },
           {
-            html: "<div class='github-link-logo'><a href='https://github.com/alibaba/sreworks'></a></div>",
-            position: 'right',
-            href: 'https://github.com/alibaba/sreworks',
-          },
-          {
             type: 'localeDropdown',
             position: 'right',
+          },
+          {
+            html: "<div class='navbar__item github-link-logo'><a href='https://github.com/alibaba/sreworks'></a></div>",
+            position: 'right',
+            href: 'https://github.com/alibaba/sreworks',
           },
         ],
       },
