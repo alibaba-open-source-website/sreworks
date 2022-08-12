@@ -45,32 +45,32 @@ function HomepageHeader() {
             <a className="description-card">
               <h2>云原生</h2>
               <p>提供通用的云原生应用模板解决方案（兼容OAM），及配合该模板的通用Operator能力，降低企业应用上云门槛。</p>
-              <div className="card-link">详情</div>
+              <div className="card-link"><a href="">详情</a></div>
             </a>
             <a className="description-card">
               <h2>自动化运维</h2>
               <p>提供统一作业调度平台能力，解决运维大规模集中式调度常见，提升运维效率利器</p>
-              <div className="card-link"> 详情</div>
+              <div className="card-link"> <a href="">详情</a></div>
             </a>
             <a className="description-card">
               <h2>运维应用工厂</h2>
               <p>提供运维应用前后端托管的运维应用开发框架及部署平台，前端配置化低代码开发，后端脚手架运维服务插件化集成</p>
-              <div className="card-link"> 详情</div>
+              <div className="card-link"> <a href="">详情</a></div>
             </a>
             <a className="description-card">
               <h2>基础运维服务</h2>
               <p>围绕IT运维工作服务台，提供包含“作业平台、流程平台”等承载日常运维操作的运维自动化平台。</p>
-              <div className="card-link">详情</div>
+              <div className="card-link"><a href="">详情</a></div>
             </a>
             <a className="description-card">
               <h2>数据运维服务</h2>
               <p>围绕“运维数据”的链路管理，提供包含“采集、计算、服务、应用”标准化的运维数据分析平台。</p>
-              <div className="card-link">详情</div>
+              <div className="card-link"><a href="">详情</a></div>
             </a>
             <a className="description-card">
               <h2>智能运维服务</h2>
               <p>基于“感知、决策、执行”的智能运维框架，结合异常检测/日志聚类/根因分析等核心智能服务，构筑Auto Pilot的无人值守、AIOps智能运维体系。</p>
-              <div className="card-link">详情</div>
+              <div className="card-link"><a href="">详情</a></div>
             </a>
           </div>
         </section>
