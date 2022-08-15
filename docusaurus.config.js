@@ -95,7 +95,7 @@ const config = {
     ({
       navbar: {
         title: 'SREWorks',
-        hideOnScroll:true,
+        hideOnScroll: true,
         logo: {
           alt: 'sreworks Logo',
           src: 'img/sreworks.png',
@@ -117,7 +117,8 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'right',
-            dropdownActiveClassDisabled: true
+            dropdownActiveClassDisabled: true,
+            activeBaseRegex: 'docs/(next|v8)'
           },
           {
             type: 'localeDropdown',
