@@ -10,7 +10,7 @@ function Footer() {
     return null;
   }
   const {copyright, links, logo, style} = footer;
-  if (self.frameElement && self.frameElement.tagName == "IFRAME") {
+  if (window.frames.length != parent.frames.length) {
     return <div></div>
   }else {
     return (
