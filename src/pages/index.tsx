@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import Translate, { translate } from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
@@ -23,9 +24,9 @@ function HomepageHeader() {
         </div> */}
         <section className="main-body-one">
           <div className='main-body-one-left'>
-            <h1 className="main-body-one-left-title">CLOUD NATIVE OPERATION AND MAINTENANCE PLATFROM</h1>
+            <h1 className="main-body-one-left-title"><Translate>CLOUD NATIVE OPERATION AND MAINTENANCE PLATFROM</Translate></h1>
             <div className="main-body-one-left-description">
-              SREWorks focuses on the application-centric one-stop "cloud native" and "DataOps and AIOps" O & M SaaS management suite as an engineering practice for the Alibaba Cloud Big Data SRE team's SRE concept. It enables companies to achieve the delivery and maintenance of cloud-native apps and resources via two primary capabilities: enterprise application and resource management and O & M development.
+              <Translate>SREWorks focuses on the application-centric one-stop "cloud native" and "DataOps and AIOps" O & M SaaS management suite as an engineering practice for the Alibaba Cloud Big Data SRE team's SRE concept.</Translate> <Translate>It enables companies to achieve the delivery and maintenance of cloud-native apps and resources via two primary capabilities: enterprise application and resource management and O & M development.</Translate>
             </div>
             <div className="main-body-one-left-button-panel">
               <button className="button button--primary" style={{ marginRight: 20 }}>安装使用</button>
