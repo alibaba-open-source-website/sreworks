@@ -23,7 +23,7 @@ function HomepageHeader() {
         </div> */}
         <section className="main-body-one">
           <div className='main-body-one-left'>
-            <h1 className="main-body-one-left-title">云原生多云应用管理平台</h1>
+            <h1 className="main-body-one-left-title">Cloud-native operation and maintenance (O&M) platform</h1>
             <div className="main-body-one-left-description">
               SREWorks 专注于以应用为中心的一站式“云原生”、“数智化”运维SaaS管理套件。提供企业的应用&资源管理及运维开发两大核心能力，帮助企业实现云原生应用&资源的交付运维
             </div>

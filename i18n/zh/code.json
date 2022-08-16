@@ -132,7 +132,7 @@
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.common.editThisPage": {
-    "message": "编辑本页",
+    "message": "评论及反馈",
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
@@ -155,92 +155,8 @@
     "message": "Skip to main content",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
-  "Make shipping applications more enjoyable.": {
-    "message": "让应用部署和管理更轻松！"
-  },
-  "KubeVela models platform features (such as workloads, operational behaviors, and cloud services) as reusable": {
-    "message": "KubeVela 将平台功能（如工作负载、运维操作行为和云服务）抽象建模为可重用的"
-  },
-  "components, and expose them to end users as self-service building blocks. When your needs grow, these capabilities can extend naturally in a programmable approach. No restriction, fully flexible.": {
-    "message": "组件，并将其作为自助式的服务构建块暴露给终端用户。当你的需求增加时，这些功能可以通过编程的方式自然扩展，没有限制且十分灵活。"
-  },
-  "KubeVela is built with Kubernetes as control plane so unlike traditional X-as-Code solutions, it never leaves configuration drift in your clusters. Also, this makes KubeVela work with any CI/CD or GitOps tools via declarative API without any integration burden.": {
-    "message": "KubeVela 是以 Kubernetes 为控制平面而构建的，因此与传统的 X-as-Code 解决方案不同，它绝不会在你的集群中发生配置漂移。此外，这使得 KubeVela 可以通过声明式 API 与任何 CI/CD 或 GitOps 工具整合，没有任何集成负担。"
-  },
-  "KubeVela is a modern application platform that": {
-    "message": "KubeVela 是一个现代的应用平台"
-  },
-  ", and adapts to your needs when you grow.": {
-    "message": "，并可以在需求增加时适应你的需求。"
-  },
-  "Think about a": {
-    "message": "类似"
-  },
-  "that is highly extensible.": {
-    "message": "那样的高拓展性。"
-  },
-  "Developer Centric": {
-    "message": "以开发者为中心"
-  },
-  "Self-Service": {
-    "message": "自助式服务"
-  },
-  "Simple yet Reliable": {
-    "message": "简单而可靠"
-  },
-  "is fully self-service": {
-    "message": "是完全自助式的服务"
-  },
-  "Get Started": {
-    "message": "快速开始"
-  },
-  "Learn More": {
-    "message": "了解更多"
-  },
-  "What is KubeVela?": {
-    "message": "KubeVela 是什么？"
-  },
-  "Deployment as Code": {
-    "message": "应用部署即代码（Deployment as Code），完整定义全交付流程"
-  },
-  "Declare your deployment plan as workflow, run it automatically with any CI/CD or GitOps system, extend or re-program the workflow steps with CUE. Glue and orchestrate all your infrastructure capabilities as reusable modules and share the large growing community addons. No add-hoc scripts, no dirty glue code, just deploy. The deployment workflow in KubeVela is powered by Open Application Model.": {
-    "message": "用声明式的方式描述你的应用交付工作流，自动化的集成 CI/CD 或 GitOps 体系，通过 CUE 轻松扩展或重新编写你的交付过程。再也没有难以维护的脚本和复杂的衔接代码，将你的基础设施能力变成可编排、可复用的模块，或者直接使用社区丰富的插件，无需关注任何基础设施细节，专注于定义和部署应用！KubeVela 部署工作流的背后就是 OAM 模型，帮助你一次编排、随处运行！"
-  },
-  "Built-in security, compliance and observability building blocks": {
-    "message": "天然支持企业级集成，安全、合规、可观测一应俱全"
-  },
-  "Choose from the wide range of LDAP integrations we provided out-of-box, enjoy enhanced multi-cluster authorization and authentication, pick and apply fine-grained RBAC modules and customize them per your own supply chain requirements. All delivery process has fully automated observability.": {
-    "message": "天然支持多集群安全和 RBAC 集成，你还可以从社区的插件中心找到一系列开箱即用的平台扩展，包括多种用户体系（LDAP 等）集成、多租户权限控制、安全校验和扫描、应用可观测性等大量企业级能力。轻松根据需求和场景来设计和定制你的平台扩展能力，满足业务快速增长的需求，同时持续保证生产环境的稳定和安全。整个应用交付流程完全透明化、可观测。"
-  },
-  "Multi-cloud/hybrid-environments app delivery as first-class citizen": {
-    "message": "面向多云多集群混合环境，丰富的应用交付和管理能力"
-  },
-  "Natively supports multi-cluster/hybrid-cloud scenarios such as progressive rollout across test/staging/production environments, automatic canary, blue-green and continuous verification, rich placement strategy across clusters and clouds, along with automated cloud environments provision.": {
-    "message": "原生支持丰富的多集群/混合环境持续交付策略，包括金丝雀、蓝绿、多环境差异化配置等，同样也支持跨环境交付。这些交付策略为你的分布式交付流程提供了充足的效率和安全保证。KubeVela 提供的中心化管控能力也减轻了到每一个集群（云）去排查问题的负担，针对不同的平台提供统一的体验，让你享受自动化交付的便利。"
-  },
-  "KubeVela is a": {
-    "message": "KubeVela 是一个"
-  },
-  "project.": {
-    "message": "项目。"
-  },
-  "KubeVela is a modern software delivery platform that makes deploying and operating applications across today's hybrid, multi-cloud environments": {
-    "message": "KubeVela 是一个现代化的软件交付平台，它可以让你的应用交付在当今流行的混合、多云环境中变得更加"
-  },
-  " easier, faster and more reliable.": {
-    "message": "简单、高效、可靠。"
-  },
-  "KubeVela is infrastructure agnostic, programmable, yet most importantly,": {
-    "message": "KubeVela 是基础设施无关的、可编程的，但最重要的是："
-  },
-  "application-centric.": {
-    "message": "它是完全以应用为中心的。"
-  },
-  ".": {
-    "message": "."
-  },
-  " It allows you to build powerful software, and deliver them anywhere!": {
-    "message": "它可以帮助你构建多样化的云原生应用，并交付到任意的云和基础设施！"
+  "cloud-native operation and maintenance (O&M) platform":{
+     "message": "云原生运维平台"
   },
   "theme.SearchPage.documentsFound.plurals": {
     "message": "One document found|{count} documents found",
