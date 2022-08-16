@@ -25,7 +25,7 @@ function HomepageHeader() {
           <div className='main-body-one-left'>
             <h1 className="main-body-one-left-title">CLOUD NATIVE OPERATION AND MAINTENANCE PLATFROM</h1>
             <div className="main-body-one-left-description">
-              SREWorks 专注于以应用为中心的一站式“云原生”、“数智化”运维SaaS管理套件。提供企业的应用&资源管理及运维开发两大核心能力，帮助企业实现云原生应用&资源的交付运维
+              SREWorks focuses on the application-centric one-stop "cloud native" and "DataOps and AIOps" O & M SaaS management suite as an engineering practice for the Alibaba Cloud Big Data SRE team's SRE concept. It enables companies to achieve the delivery and maintenance of cloud-native apps and resources via two primary capabilities: enterprise application and resource management and O & M development.
             </div>
             <div className="main-body-one-left-button-panel">
               <button className="button button--primary" style={{ marginRight: 20 }}>安装使用</button>
