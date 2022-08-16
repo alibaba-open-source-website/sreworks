@@ -46,7 +46,7 @@ const config = {
           includeCurrentVersion: true,
           lastVersion: 'v1.2',
           editUrl: function(params){
-             docName = params.permalink.split("/")[params.permalink.split("/").length - 1].split(".")[0];
+             let docName = params.permalink.split("/")[params.permalink.split("/").length - 1].split(".")[0];
              return "https://www.yuque.com/sreworks-doc/docs/" + docName;
           },
           versions: {
