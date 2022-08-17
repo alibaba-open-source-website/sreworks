@@ -34,7 +34,7 @@ export default function Home(): JSX.Element {
               </div>
               <div className="main-body-one-left-button-panel">
                 <button className="button button--primary" style={{ marginRight: 20 }}>安装使用</button>
-                <a href="https://github.com/alibaba/sreworks" style={{"position": "relative", "top": "13px"}} target="_blank"><img alt="GitHub stars" style={{"width": "138px", "borderRadius": "var(--ifm-button-border-radius)"}} src="https://img.shields.io/github/stars/alibaba/sreworks?color=%2300c1de&style=for-the-badge" /></a>
+                <a href="https://github.com/alibaba/sreworks" style={{"position": "relative", "top": "13px"}} target="_blank"><img alt="GitHub stars" style={{"height": "35px", "borderRadius": "var(--ifm-button-border-radius)"}} src="https://img.shields.io/github/stars/alibaba/sreworks?color=%2300c1de&style=for-the-badge&labelColor=%23000" /></a>
               </div>
             </div>
             <div className="main-body-one-right">
