@@ -48,8 +48,8 @@
   }
   .navbar--fixed-top {
     border-bottom: none !important;
-    padding-left:130px;
-    padding-right: 120px;
+    padding-left:10vw;
+    padding-right: 10vw;
     height: 72px;
     // box-shadow: 5px 15px 50px rgb(0 55 79 / 20%);
     .navbar__inner {
@@ -70,7 +70,7 @@
     }
   }
   .main-body-one {
-    padding: 80px 60px 60px 60px;
+    padding: 160px 10vw 200px 10vw;
     display: grid;
     gap: 24px;
     grid-template-columns: 1fr 1fr;
@@ -115,15 +115,16 @@
     }
   }
   .main-body-two {
-    padding-top: 30px;
+    padding-top: 80px;
+    padding-bottom: 60px;
     background-color: #f0f1f5;
-    margin-left: -5rem;
-    margin-right: -5rem;
     margin-top: 100px;
-    padding: 2rem 8rem;
     .main-body-two-title {
+      text-align: center;
     }
     .main-body-two-description {
+      padding-left: 10vw;
+      padding-right: 10vw;
       margin-top: 40px;
       display: grid;
       margin-bottom: 30px;
@@ -157,7 +158,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    padding: 80px 60px 60px 60px;
+    padding: 80px 10vw;
     height: 500px;
     .main-body-three-left {
       padding-top: 70px;
