@@ -43,7 +43,8 @@ export default function Home(): JSX.Element {
           </section>
           <section className="main-body-two">
             <div className="main-body-two-title">
-              <h2>Out-of-the-box ops servitization capacity</h2>
+              <h2><Translate>Out-of-the-box ops servitization capacity</Translate></h2>
+              <h2>&nbsp;</h2>
             </div>
             <div className="main-body-two-description">
               <a className="description-card">
