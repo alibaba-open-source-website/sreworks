@@ -70,11 +70,14 @@
     }
   }
   .main-body-one {
-    padding: 200px 10vw 200px 10vw;
+    padding: 140px 10vw 60px 10vw;
     display: grid;
     gap: 24px;
     grid-template-columns: 1fr 1fr;
     .main-body-one-left {
+      .button {
+        background-color: var(--ifm-color-primary) !important;
+      }
       .main-body-one-left-title {
         font-size: 40px;
         text-align: left;
