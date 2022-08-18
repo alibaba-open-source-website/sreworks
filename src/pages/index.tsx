@@ -28,7 +28,7 @@ export default function Home(): JSX.Element {
         <div>
           <section className="main-body-one">
             <div className='main-body-one-left'>
-              <h1 className="main-body-one-left-title"><Translate>CLOUD NATIVE DATAOPS AND AIOPS PLATFROM</Translate></h1>
+              <h1 className="main-body-one-left-title"><Translate>Cloud Native DataOps & AIOps Platform</Translate></h1>
               <div className="main-body-one-left-description">
                  <Translate>SREWorks focuses on the application-centric one-stop "cloud native" and "DataOps and AIOps" O & M SaaS management suite as an engineering practice for the Alibaba Cloud Big Data SRE team's SRE concept.</Translate> <Translate>It enables companies to achieve the delivery and maintenance of cloud-native apps and resources via two primary capabilities: enterprise application and resource management and O & M development.</Translate>
               </div>
