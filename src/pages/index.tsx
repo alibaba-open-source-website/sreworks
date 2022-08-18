@@ -43,8 +43,7 @@ export default function Home(): JSX.Element {
           </section>
           <section className="main-body-two">
             <div className="main-body-two-title">
-              <h2>开箱即用的运维服务化能力</h2>
-              <h4>运维领域服务&业务领域定制</h4>
+              <h2>Out-of-the-box ops servitization capacity</h2>
             </div>
             <div className="main-body-two-description">
               <a className="description-card">

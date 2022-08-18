@@ -8,6 +8,9 @@
   "It enables companies to achieve the delivery and maintenance of cloud-native apps and resources via two primary capabilities: enterprise application and resource management and O & M development.": {
     "message": "提供企业的应用&资源管理及运维开发两大核心能力，帮助企业实现云原生应用&资源的交付运维。"
   },
+  "Out-of-the-box ops servitization capacity":{
+    "message": "开箱即用的运维服务化能力"
+  },
   "theme.ErrorPageContent.title": {
     "message": "页面已崩溃。",
     "description": "The title of the fallback page when the page crashed"
