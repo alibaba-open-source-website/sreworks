@@ -91,7 +91,7 @@ const config = {
           {
             html: "<button class=' navbar__item button button--primary'>申请体验</button>",
             position: 'right',
-            href: 'https://sreworks.c38cca9c474484bdc9873f44f733d8bcd.cn-beijing.alicontainer.com/',
+            href: 'https://wj.qq.com/s2/10565748/53da/',
           },
           {
             type: 'docsVersionDropdown',
