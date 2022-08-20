@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import Translate, { translate } from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import GitHubButton from 'react-github-btn';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
@@ -37,11 +38,20 @@ export default function Home(): JSX.Element {
                             className={clsx(
                                 'button'
                             )}
-                            style={{marginRight:10}}
+                            style={{marginRight:20}}
                             to={useBaseUrl('/docs/next/rr5g10')}>
                             <Translate>Get Started</Translate>
                         </Link>
-                <a href="https://github.com/alibaba/sreworks" style={{"position": "relative", "top": "13px"}} target="_blank"><img alt="GitHub stars" style={{"height": "33px", "borderRadius": "var(--ifm-button-border-radius)"}} src="https://img.shields.io/github/stars/alibaba/sreworks?color=%2300c1de&style=for-the-badge&labelColor=%23000" /></a>
+          <span style={{"position": "relative", "top": "12px"}}>
+           <GitHubButton 
+            href="https://github.com/alibaba/sreworks"
+            data-icon="octicon-star"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Star alibaba/sreworks on GitHub">
+            Star
+          </GitHubButton>
+          </span>
               </div>
             </div>
             <div className="main-body-one-right">
@@ -50,13 +60,13 @@ export default function Home(): JSX.Element {
           </section>
           <section className="main-body-two">
             <div className="main-body-two-title">
-              <h2><Translate>Out-of-the-box ops servitization capacity</Translate></h2>
+              <h2><Translate>Out-of-the-box operation & management solutions</Translate></h2>
               <h2>&nbsp;</h2>
             </div>
             <div className="main-body-two-description">
               <a className="description-card">
-                <h2>云原生</h2>
-                <p>提供通用的云原生应用模板解决方案（兼容OAM），及配合该模板的通用Operator能力，降低企业应用上云门槛。</p>
+                <h2><Translate>DevOps</Translate></h2>
+                <p><Translate>Provide general cloud application solutions (Open Application Model), integrate infrastructure capabilities, and reduce the threshold for enterprises to migrate applications to the cloud.</Translate></p>
                 <div className="card-link"><a href="">详情</a></div>
               </a>
               <a className="description-card">

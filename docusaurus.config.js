@@ -84,12 +84,12 @@ const config = {
 
         items: [
           {
-            html: "<span>常见问题</span>",
+            label: "FAQ",
             position: 'right',
             to: 'docs/next/iwa896'
           },
           {
-            html: "<button class=' navbar__item button button--primary'>申请体验</button>",
+            label: "Demo",
             position: 'right',
             href: 'https://wj.qq.com/s2/10565748/53da/',
           },
