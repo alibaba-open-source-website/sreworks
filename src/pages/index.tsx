@@ -20,7 +20,7 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`CLOUD NATIVE O&M PLATFROM`}
+      title={`Cloud Native DataOps & AIOps Platform`}
       description="Description will go into a meta tag in <head />">
       {/* <HomepageHeader /> */}
       <main>
@@ -33,16 +33,15 @@ export default function Home(): JSX.Element {
                  <Translate>SREWorks focuses on the application-centric one-stop "cloud native" and "DataOps and AIOps" O & M SaaS management suite as an engineering practice for the Alibaba Cloud Big Data SRE team's SRE concept.</Translate> <Translate>It enables companies to achieve the delivery and maintenance of cloud-native apps and resources via two primary capabilities: enterprise application and resource management and O & M development.</Translate>
               </div>
               <div className="main-body-one-left-button-panel">
-                {/* <button className="button button--primary" to={useBaseUrl('/docs/next/rr5g10')}>  style={{ marginRight: 20 }}>安装使用</button> */}
                 <Link
                             className={clsx(
                                 'button'
                             )}
                             style={{marginRight:10}}
                             to={useBaseUrl('/docs/next/rr5g10')}>
-                            安装使用
+                            <Translate>Get Started</Translate>
                         </Link>
-                <a href="https://github.com/alibaba/sreworks" style={{"position": "relative", "top": "13px"}} target="_blank"><img alt="GitHub stars" style={{"height": "35px", "borderRadius": "var(--ifm-button-border-radius)"}} src="https://img.shields.io/github/stars/alibaba/sreworks?color=%2300c1de&style=for-the-badge&labelColor=%23000" /></a>
+                <a href="https://github.com/alibaba/sreworks" style={{"position": "relative", "top": "13px"}} target="_blank"><img alt="GitHub stars" style={{"height": "33px", "borderRadius": "var(--ifm-button-border-radius)"}} src="https://img.shields.io/github/stars/alibaba/sreworks?color=%2300c1de&style=for-the-badge&labelColor=%23000" /></a>
               </div>
             </div>
             <div className="main-body-one-right">

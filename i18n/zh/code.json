@@ -11,6 +11,9 @@
   "Out-of-the-box ops servitization capacity":{
     "message": "开箱即用的运维服务化能力"
   },
+  "Get Started":{
+    "message": "安装使用"
+  },
   "theme.ErrorPageContent.title": {
     "message": "页面已崩溃。",
     "description": "The title of the fallback page when the page crashed"
