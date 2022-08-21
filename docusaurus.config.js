@@ -44,7 +44,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.json'),
           includeCurrentVersion: true,
-          lastVersion: 'v1.2',
+          lastVersion: 'test',
           editUrl: function(params){
              let docName = params.permalink.split("/")[params.permalink.split("/").length - 1].split(".")[0];
              return "https://www.yuque.com/sreworks-doc/docs/" + docName;
