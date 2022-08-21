@@ -94,21 +94,30 @@ export default function Home(): JSX.Element {
                    </Link>
                  </div>
               </a>
- 
+               <a className="description-card">
+                <h2><Translate>Multi Cloud Cluster Management</Translate></h2>
+                <p><Translate>The platform is built based on k8s cluster, supports management of various cloud vendors or self-built k8s clusters, and cooperates with standard ops warehouses to easily realize multi-cluster management, dataOps and AIOps.</Translate></p>
+                <div className="card-link">
+                   <Link
+                       to={useBaseUrl('/docs/next/moptgx')}>
+                       <Translate>Detail</Translate>
+                   </Link>
+                 </div>
+              </a>
+                <a className="description-card">
+                <h2><Translate>Ops application factory</Translate></h2>
+                <p><Translate>The frontend low-code solution & backend scaffolding based on a large number of ops practice cases helps SRE engineer to quickly produce various ops platforms or tools to support the six major ops requirements of "delivery, monitoring, management, control, operation, and service".</Translate></p>
+                <div className="card-link">
+                   <Link
+                       to={useBaseUrl('/docs/next/ap1wm6')}>
+                       <Translate>Detail</Translate>
+                   </Link>
+                 </div>
+              </a>  
               <a className="description-card">
                 <h2>自动化运维</h2>
                 <p>提供统一作业调度平台能力，解决运维大规模集中式调度常见，提升运维效率利器</p>
                 <div className="card-link"> <a href="">详情</a></div>
-              </a>
-              <a className="description-card">
-                <h2>运维应用工厂</h2>
-                <p>提供运维应用前后端托管的运维应用开发框架及部署平台，前端配置化低代码开发，后端脚手架运维服务插件化集成</p>
-                <div className="card-link"> <a href="">详情</a></div>
-              </a>
-              <a className="description-card">
-                <h2>基础运维服务</h2>
-                <p>围绕IT运维工作服务台，提供包含“作业平台、流程平台”等承载日常运维操作的运维自动化平台。</p>
-                <div className="card-link"><a href="">详情</a></div>
               </a>
             </div>
           </section>

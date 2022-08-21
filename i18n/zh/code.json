@@ -56,6 +56,18 @@
   "AIOps":{
     "message": "智能运维平台(AIOps)"
   },
+  "Multi Cloud Cluster Management":{
+    "message": "多云管理"
+  },
+  "The platform is built based on k8s cluster, supports management of various cloud vendors or self-built k8s clusters, and cooperates with standard ops warehouses to easily realize multi-cluster management, dataOps and AIOps.":{
+    "message": "平台基于标准K8s集群构建，支持纳管各种云厂商或自建的k8s集群，配合标准运维数仓，轻松实现多集群管理以及数据化智能化管理。"
+  },
+  "Ops application factory":{
+    "message": "运维应用工厂"
+  },
+  "The frontend low-code solution & backend scaffolding based on a large number of ops practice cases helps SRE engineer to quickly produce various ops platforms or tools to support the six major ops requirements of \"delivery, monitoring, management, control, operation, and service\".":{
+    "message": "基于大量运维实践案例沉淀的前端低代码和后端脚手架方案，帮助运维工程师快速产出各种运维平台或工具，支撑”交付、监测、管理、控制、运营、服务”六大运维需求。"
+  },
   "theme.ErrorPageContent.title": {
     "message": "页面已崩溃。",
     "description": "The title of the fallback page when the page crashed"

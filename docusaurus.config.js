@@ -134,14 +134,14 @@ const config = {
                 label: 'Github',
                 href: 'https://github.com/alibaba/sreworks/issues',
               },{
-                html: '<div class="wechat"> <a class="wechat-label">钉钉交流群</a> <a class="wechat-img" rel="noreferrer noopener" aria-label="Wechat Group"><img src="https://static.kubevela.net/images/barnett-wechat.jpg" alt="Broker wechat to add you into the user group."></div>'
+                html: '<div class="wechat"> <a class="wechat-label">钉钉交流群</a> <a class="wechat-img" rel="noreferrer noopener" aria-label="DingTalk Group"><img src="https://sreworks.oss-cn-beijing.aliyuncs.com/logo/ding.jpg"></div>'
               },{
-                html: '<div class="wechat"> <a class="wechat-label">微信交流群</a> <a class="wechat-img" rel="noreferrer noopener" aria-label="Wechat Group"><img src="https://static.kubevela.net/images/barnett-wechat.jpg" alt="Broker wechat to add you into the user group."></div>'
+                html: '<div class="wechat"> <a class="wechat-label">微信交流群</a> <a class="wechat-img" rel="noreferrer noopener" aria-label="Wechat Group"><img src="https://sreworks.oss-cn-beijing.aliyuncs.com/logo/weixin-helper.jpg" alt="Broker wechat to add you into the user group."></div>'
               }
             ],
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} SREWorks, Inc. Built with Docusaurus`,
+        copyright: `Copyright © ${new Date().getFullYear()} SREWorks | 浙公网安备: 33010002000092号 | ICP备案网站信息: 浙B2-20120091-4`,
       },
       prism: {
         theme: lightCodeTheme,
