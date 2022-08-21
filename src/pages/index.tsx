@@ -22,7 +22,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Cloud Native DataOps & AIOps Platform`}
-      description="Description will go into a meta tag in <head />">
+      description="SREWorks focuses on an application-centric development model, provides a one-stop cloud-native dataOps&AIOps SaaS management suite.">
       {/* <HomepageHeader /> */}
       <main>
         {/* <HomepageFeatures /> */}
