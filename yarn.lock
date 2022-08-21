@@ -3353,7 +3353,7 @@ dns-packet@^5.2.2:
 
 docusaurus-plugin-includes@^1.1.4:
   version "1.1.4"
-  resolved "https://registry.npmjs.org/docusaurus-plugin-includes/-/docusaurus-plugin-includes-1.1.4.tgz#5c18f66f299b4e02d1eb454d8123c2d160ee0c33"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-includes/-/docusaurus-plugin-includes-1.1.4.tgz#5c18f66f299b4e02d1eb454d8123c2d160ee0c33"
   integrity sha512-4L7Eqker4xh1dyWZoz2Isz6JQTg8CWZvvSQyX2IHpEPjwovvD5DpEHHRlSk7gJLQNasWPP9DTHTd0fxFZ6jl2g==
   dependencies:
     "@docusaurus/core" "^2.0.0-beta.5"

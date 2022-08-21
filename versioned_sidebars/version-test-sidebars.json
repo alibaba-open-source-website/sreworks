@@ -1,0 +1,185 @@
+{
+  "sidebars": [
+    "index",
+    {
+      "items": [
+        {
+          "label": "1.1 简介",
+          "type": "doc",
+          "id": "fx909t"
+        },
+        {
+          "label": "1.2 核心对象",
+          "type": "doc",
+          "id": "lz3fpq"
+        },
+        {
+          "label": "1.3 名词解释",
+          "type": "doc",
+          "id": "xq9sk7"
+        },
+        {
+          "label": "1.4 功能列表",
+          "type": "doc",
+          "id": "tcpxav"
+        },
+        {
+          "label": "1.5 版本记录",
+          "type": "doc",
+          "id": "ogxnmx"
+        }
+      ],
+      "label": "1 快速开始",
+      "collapsed": true,
+      "type": "category"
+    },
+    {
+      "items": [
+        {
+          "label": "2.1 快速安装",
+          "type": "doc",
+          "id": "rr5g10"
+        },
+        {
+          "label": "2.2 源码构建安装",
+          "type": "doc",
+          "id": "mzz07m"
+        }
+      ],
+      "label": "2 安装SREWorks",
+      "collapsed": true,
+      "type": "category"
+    },
+    {
+      "items": [
+        {
+          "label": "3.1 核心思想",
+          "type": "doc",
+          "id": "eg91va"
+        },
+        {
+          "label": "3.2 技术架构",
+          "type": "doc",
+          "id": "grtf3q"
+        },
+        {
+          "label": "3.3 数智运维",
+          "type": "doc",
+          "id": "cirgod"
+        }
+      ],
+      "label": "3 架构思想",
+      "collapsed": true,
+      "type": "category"
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "label": "4.1.1 什么是企业应用",
+              "type": "doc",
+              "id": "ynueoi"
+            },
+            {
+              "label": "4.1.2 企业组织管理",
+              "type": "doc",
+              "id": "pdqddr"
+            },
+            {
+              "label": "4.1.3 企业资源管理",
+              "type": "doc",
+              "id": "moptgx"
+            },
+            {
+              "label": "4.1.4 企业应用管理",
+              "type": "doc",
+              "id": "ii05yo"
+            }
+          ],
+          "label": "4.1 企业应用",
+          "collapsed": true,
+          "type": "category"
+        },
+        {
+          "items": [
+            {
+              "label": "4.2.3 运维前端开发",
+              "type": "doc",
+              "id": "ou9k9g"
+            },
+            {
+              "label": "4.2.1 什么是运维应用",
+              "type": "doc",
+              "id": "uopmre"
+            },
+            {
+              "label": "4.2.2 运维应用管理",
+              "type": "doc",
+              "id": "ap1wm6"
+            }
+          ],
+          "label": "4.2 运维开发",
+          "collapsed": true,
+          "type": "category"
+        }
+      ],
+      "label": "4 使用SREWorks",
+      "collapsed": true,
+      "type": "category"
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "label": "5.1.1 运维前端组件开发",
+              "type": "doc",
+              "id": "ngx61f"
+            }
+          ],
+          "label": "5.1 运维开发扩展",
+          "collapsed": true,
+          "type": "category"
+        }
+      ],
+      "label": "5. 扩展SREWorks",
+      "collapsed": true,
+      "type": "category"
+    },
+    {
+      "items": [
+        {
+          "label": "6.1 部署Flink云原生开源版",
+          "type": "doc",
+          "id": "cgczgu"
+        }
+      ],
+      "label": "6. 最佳场景实践",
+      "collapsed": true,
+      "type": "category"
+    },
+    {
+      "items": [
+        {
+          "label": "7.1 常见问题",
+          "type": "doc",
+          "id": "iwa896"
+        },
+        {
+          "label": "7.2 参与SREWorks开源",
+          "type": "doc",
+          "id": "yc64sk"
+        },
+        {
+          "label": "7.3 代码贡献指南",
+          "type": "doc",
+          "id": "rxgxgz"
+        }
+      ],
+      "label": "7.社区",
+      "collapsed": true,
+      "type": "category"
+    }
+  ]
+}

@@ -2,11 +2,8 @@
   "Cloud Native DataOps & AIOps Platform": {
     "message": "云原生数智运维平台"
   },
-  "SREWorks focuses on the application-centric one-stop \"cloud native\" and \"DataOps and AIOps\" O & M SaaS management suite as an engineering practice for the Alibaba Cloud Big Data SRE team's SRE concept.": {
-    "message": "SREWorks 专注于以应用为中心的一站式“云原生”、“数智化”运维SaaS管理套件。"
-  },
-  "It enables companies to achieve the delivery and maintenance of cloud-native apps and resources via two primary capabilities: enterprise application and resource management and O & M development.": {
-    "message": "提供企业的应用&资源管理及运维开发两大核心能力，帮助企业实现云原生应用&资源的交付运维。"
+  "SREWorks focuses on an application-centric development model, provides a one-stop cloud-native dataOps&AIOps SaaS management suite. It supports the two core capabilities of enterprise application and resource management and ops development, and helps enterprises quickly achieve the delivery goals of cloud-native applications and resources.": {
+    "message": "SREWorks 专注于以应用为中心的开发模式，提供一站式云原生数智化运维SaaS(软件即服务)管理套件。支撑企业的应用及资源管理和运维开发两大核心能力，帮助企业快速实现云原生应用及资源的交付目标。"
   },
   "Out-of-the-box operation & management solutions":{
     "message": "开箱即用的运维能力"
@@ -64,6 +61,12 @@
   },
   "Ops application factory":{
     "message": "运维应用工厂"
+  },
+  "Automation":{
+    "message": "自动化运维"
+  },
+  "A unified job scheduling platform solve large-scale centralized scheduling problems and improve ops efficiency.":{
+    "message": "统一的作业调度平台，解决大规模集中调度问题，提升运维效率。"   
   },
   "The frontend low-code solution & backend scaffolding based on a large number of ops practice cases helps SRE engineer to quickly produce various ops platforms or tools to support the six major ops requirements of \"delivery, monitoring, management, control, operation, and service\".":{
     "message": "基于大量运维实践案例沉淀的前端低代码和后端脚手架方案，帮助运维工程师快速产出各种运维平台或工具，支撑”交付、监测、管理、控制、运营、服务”六大运维需求。"

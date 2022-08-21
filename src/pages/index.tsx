@@ -31,7 +31,7 @@ export default function Home(): JSX.Element {
             <div className='main-body-one-left'>
               <h1 className="main-body-one-left-title"><Translate>Cloud Native DataOps & AIOps Platform</Translate></h1>
               <div className="main-body-one-left-description">
-                 <Translate>SREWorks focuses on the application-centric one-stop "cloud native" and "DataOps and AIOps" O & M SaaS management suite as an engineering practice for the Alibaba Cloud Big Data SRE team's SRE concept.</Translate> <Translate>It enables companies to achieve the delivery and maintenance of cloud-native apps and resources via two primary capabilities: enterprise application and resource management and O & M development.</Translate>
+                 <Translate>SREWorks focuses on an application-centric development model, provides a one-stop cloud-native dataOps&AIOps SaaS management suite. It supports the two core capabilities of enterprise application and resource management and ops development, and helps enterprises quickly achieve the delivery goals of cloud-native applications and resources.</Translate>
               </div>
               <div className="main-body-one-left-button-panel">
                 <Link
@@ -113,12 +113,17 @@ export default function Home(): JSX.Element {
                        <Translate>Detail</Translate>
                    </Link>
                  </div>
-              </a>  
-              <a className="description-card">
-                <h2>自动化运维</h2>
-                <p>提供统一作业调度平台能力，解决运维大规模集中式调度常见，提升运维效率利器</p>
-                <div className="card-link"> <a href="">详情</a></div>
               </a>
+                <a className="description-card">
+                <h2><Translate>Automation</Translate></h2>
+                <p><Translate>A unified job scheduling platform solve large-scale centralized scheduling problems and improve ops efficiency.</Translate></p>
+                <div className="card-link">
+                   <Link
+                       to={useBaseUrl('/docs/next/cirgod#142-数据管理')}>
+                       <Translate>Detail</Translate>
+                   </Link>
+                 </div>
+              </a>  
             </div>
           </section>
           <section className="main-body-three">
