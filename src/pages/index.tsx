@@ -67,7 +67,13 @@ export default function Home(): JSX.Element {
               <a className="description-card">
                 <h2><Translate>DevOps</Translate></h2>
                 <p><Translate>Provide general cloud application solutions (Open Application Model), integrate infrastructure capabilities, and reduce the threshold for enterprises to migrate applications to the cloud.</Translate></p>
-                <div className="card-link"><a href="">详情</a></div>
+                <div className="card-link">
+                   <Link
+                       style={{marginRight:0}}
+                       to={useBaseUrl('/docs/next/ii05yo')}>
+                       <Translate>Detail</Translate>
+                   </Link>
+                 </div>
               </a>
               <a className="description-card">
                 <h2>自动化运维</h2>
