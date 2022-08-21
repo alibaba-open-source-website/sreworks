@@ -98,16 +98,23 @@ export default function Home(): JSX.Element {
           </section>
           <section className="main-body-three">
             <div className="main-body-three-left">
-              <h2 className="main-body-three-left-title">丰富的基础组件</h2>
+              <h2 className="main-body-three-left-title"><Translate>Frontend market with tons of widgets</Translate></h2>
               <div className="main-body-three-left-description">
-                低代码设计交互,提供丰富、灵活、实用的基础组件，为业务产品提供强有力的设计支持; 同时开放自定义组件集成能力，满足用户多样化个性化场景需求。
+                <Translate>The low-code frontend IDE provides both agility and full business function support. Rich, flexible and practical frontend widget market, open custom widget integration capabilities, to meet the needs of users in diverse personalized scenarios.</Translate>
               </div>
               <div className="main-body-three-left-button-panel">
-                <button className="button button--primary" style={{ marginRight: 20 }}>了解更多</button>
+                       <Link
+                            className={clsx(
+                                'button button--primary'
+                            )}
+                            style={{marginRight:20}}
+                            to={useBaseUrl('/docs/next/ou9k9g')}>
+                            <Translate>Learn More</Translate>
+                        </Link> 
               </div>
             </div>
             <div>
-              <img src="https://sreworks.c38cca9c474484bdc9873f44f733d8bcd.cn-beijing.alicontainer.com//gateway/minio/public/a534c415-dd68-4147-bc02-2bdca7f2adcb"></img>
+               <img style={{ height: 500 , marginTop: -50 }} src="https://sreworks.oss-cn-beijing.aliyuncs.com/svg/lowcode-active2.svg" />
             </div>
           </section>
         </div>

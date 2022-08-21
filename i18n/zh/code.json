@@ -17,6 +17,15 @@
   "DevOps":{
     "message": "研发运维一体化(DevOps)"
   },
+  "Frontend market with tons of widgets":{
+    "message": "丰富的前端组件市场"
+  },
+  "Learn More": {
+    "message": "了解更多"
+  },
+  "The low-code frontend IDE provides both agility and full business function support. Rich, flexible and practical frontend widget market, open custom widget integration capabilities, to meet the needs of users in diverse personalized scenarios.":{
+    "message": "低代码前端设计器既具备敏捷性又提供全面的业务功能支持。丰富、灵活、实用的前端组件市场，开放自定义组件集成能力，满足用户多样化个性化场景需求。"
+  }, 
   "Provide general cloud application solutions (Open Application Model), integrate infrastructure capabilities, and reduce the threshold for enterprises to migrate applications to the cloud.":{
     "message": "提供通用云原生应用解决方案(开放应用模型OAM)，整合基础运维能力，降低企业应用上云门槛。"
   },
