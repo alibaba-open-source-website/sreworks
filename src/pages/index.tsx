@@ -69,12 +69,32 @@ export default function Home(): JSX.Element {
                 <p><Translate>Provide general cloud application solutions (Open Application Model), integrate infrastructure capabilities, and reduce the threshold for enterprises to migrate applications to the cloud.</Translate></p>
                 <div className="card-link">
                    <Link
-                       style={{marginRight:0}}
                        to={useBaseUrl('/docs/next/ii05yo')}>
                        <Translate>Detail</Translate>
                    </Link>
                  </div>
               </a>
+              <a className="description-card">
+                <h2><Translate>DataOps</Translate></h2>
+                <p><Translate>Focusing on the process management of ops data, it provides a standardized ops data analysis platform including "data collection, real-time calculation, data service, and data application".</Translate></p>
+                <div className="card-link">
+                   <Link
+                       to={useBaseUrl('/docs/next/cirgod')}>
+                       <Translate>Detail</Translate>
+                   </Link>
+                 </div>
+              </a>
+               <a className="description-card">
+                <h2><Translate>AIOps</Translate></h2>
+                <p>基于“感知、决策、执行”的智能运维框架，结合异常检测/日志聚类/根因分析等核心智能服务，构筑Auto Pilot的无人值守、AIOps智能运维体系。</p>
+                <div className="card-link">
+                   <Link
+                       to={useBaseUrl('/docs/next/cirgod#2-智能化运维')}>
+                       <Translate>Detail</Translate>
+                   </Link>
+                 </div>
+              </a>
+ 
               <a className="description-card">
                 <h2>自动化运维</h2>
                 <p>提供统一作业调度平台能力，解决运维大规模集中式调度常见，提升运维效率利器</p>
@@ -90,17 +110,49 @@ export default function Home(): JSX.Element {
                 <p>围绕IT运维工作服务台，提供包含“作业平台、流程平台”等承载日常运维操作的运维自动化平台。</p>
                 <div className="card-link"><a href="">详情</a></div>
               </a>
-              <a className="description-card">
-                <h2>数据运维服务</h2>
-                <p>围绕“运维数据”的链路管理，提供包含“采集、计算、服务、应用”标准化的运维数据分析平台。</p>
-                <div className="card-link"><a href="">详情</a></div>
-              </a>
-              <a className="description-card">
-                <h2>智能运维服务</h2>
-                <p>基于“感知、决策、执行”的智能运维框架，结合异常检测/日志聚类/根因分析等核心智能服务，构筑Auto Pilot的无人值守、AIOps智能运维体系。</p>
-                <div className="card-link"><a href="">详情</a></div>
-              </a>
             </div>
+          </section>
+          <section className="main-body-three">
+            <div className="main-body-three-left">
+              <h2 className="main-body-three-left-title"><Translate>DataOps & AIOps System</Translate></h2>
+              <div className="main-body-three-left-description">
+                <Translate>The dataops & aiops system incubated in Alibaba's big data scenarios can easily support hyperscale clusters, ranging from application ops to multi-cloud management solutions, from dataops warehouses to aiops algorithms. All services are readily available in SREWorks.</Translate>
+              </div>
+              <div className="main-body-three-left-button-panel">
+                       <Link
+                            className={clsx(
+                                'button button--primary'
+                            )}
+                            style={{marginRight:20}}
+                            to={useBaseUrl('/docs/next/cirgod')}>
+                            <Translate>Learn More</Translate>
+                        </Link> 
+              </div>
+            </div>
+            <div>
+               <img style={{ height: 300 , marginTop: 40, marginLeft: 100 }} src="https://sreworks.oss-cn-beijing.aliyuncs.com/svg/dataops-aiops.svg" />
+            </div>
+          </section>
+          <section className="main-body-three">
+            <div>
+               <img style={{ height: 300, marginTop: 40  }} src="https://sreworks.oss-cn-beijing.aliyuncs.com/svg/k8s-devops.svg" />
+            </div>
+            <div className="main-body-three-left">
+              <h2 className="main-body-three-left-title"><Translate>Cloud native construction and delivery system</Translate></h2>
+              <div className="main-body-three-left-description">
+                <Translate>The closed-loop application construction and delivery process under cloud native eliminates the trouble of maintaining complex construction and deploy pipline, and can expand construction performance at any time. Build your application once and run it anywhere in multi-cloud environment.</Translate>
+              </div>
+              <div className="main-body-three-left-button-panel">
+                       <Link
+                            className={clsx(
+                                'button button--primary'
+                            )}
+                            style={{marginRight:20}}
+                            to={useBaseUrl('/docs/next/ap1wm6')}>
+                            <Translate>Learn More</Translate>
+                        </Link> 
+              </div>
+            </div> 
           </section>
           <section className="main-body-three">
             <div className="main-body-three-left">
@@ -122,7 +174,7 @@ export default function Home(): JSX.Element {
             <div>
                <img style={{ height: 500 , marginTop: -50 }} src="https://sreworks.oss-cn-beijing.aliyuncs.com/svg/lowcode-active2.svg" />
             </div>
-          </section>
+          </section> 
         </div>
       </main>
     </Layout>

@@ -26,6 +26,24 @@
   "Detail":{
     "message": "详情"
   },
+  "Cloud native construction and delivery system":{
+    "message": "云原生构建及交付体系"
+  },
+  "DataOps & AIOps System":{
+    "message": "数智运维体系"
+  },
+  "DataOps":{
+    "message": "数据运维平台(DataOps)"
+  },
+  "Focusing on the process management of ops data, it provides a standardized ops data analysis platform including \"data collection, real-time calculation, data service, and data application\".":{
+    "message": "围绕运维数据的链路管理，提供包含“数据采集、实时计算、数据服务、数据应用”的标准化运维数据分析平台。"
+  },
+  "The dataops & aiops system incubated in Alibaba's big data scenarios can easily support hyperscale clusters, ranging from application ops to multi-cloud management solutions, from dataops warehouses to aiops algorithms. All services are readily available in SREWorks.":{
+    "message": "孵化于阿里大数据场景的数智运维体系能够轻松支撑大规模运维场景，从应用运维实践到多云管理方案，从运维数仓到智能运维算法，一应俱全。"
+  },
+  "The closed-loop application construction and delivery process under cloud native eliminates the trouble of maintaining complex construction and deploy pipline, and can expand construction performance at any time. Build your application once and run it anywhere in multi-cloud environment.":{
+    "message": "云原生下闭环的应用构建交付流程，免去维护复杂构建及部署链路的麻烦，随时扩展构建性能。实现应用的一次构建，多云环境随处运行。"
+  },
   "The low-code frontend IDE provides both agility and full business function support. Rich, flexible and practical frontend widget market, open custom widget integration capabilities, to meet the needs of users in diverse personalized scenarios.":{
     "message": "低代码前端设计器既具备敏捷性又提供全面的业务功能支持。丰富、灵活、实用的前端组件市场，开放自定义组件集成能力，满足用户多样化个性化场景需求。"
   }, 
