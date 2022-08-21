@@ -50,6 +50,12 @@
   "Provide general cloud application solutions (Open Application Model), integrate infrastructure capabilities, and reduce the threshold for enterprises to migrate applications to the cloud.":{
     "message": "提供通用云原生应用解决方案(开放应用模型OAM)，整合基础运维能力，降低企业应用上云门槛。"
   },
+  "The AIOps framework is built on the basis of perception-decision-execution cycle, combined with core aiops algorithm services such as anomaly detection/log clustering/root cause analysis, supports an \"auto poliot\" AIOps system.":{
+    "message": "基于“感知、决策、执行”的智能运维框架，结合异常检测/日志聚类/根因分析等核心智能算法服务，构筑无人值守的智能运维体系。"
+  },
+  "AIOps":{
+    "message": "智能运维平台(AIOps)"
+  },
   "theme.ErrorPageContent.title": {
     "message": "页面已崩溃。",
     "description": "The title of the fallback page when the page crashed"

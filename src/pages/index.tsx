@@ -86,7 +86,7 @@ export default function Home(): JSX.Element {
               </a>
                <a className="description-card">
                 <h2><Translate>AIOps</Translate></h2>
-                <p>基于“感知、决策、执行”的智能运维框架，结合异常检测/日志聚类/根因分析等核心智能服务，构筑Auto Pilot的无人值守、AIOps智能运维体系。</p>
+                <p><Translate>The AIOps framework is built on the basis of perception-decision-execution cycle, combined with core aiops algorithm services such as anomaly detection/log clustering/root cause analysis, supports an "auto poliot" AIOps system.</Translate></p>
                 <div className="card-link">
                    <Link
                        to={useBaseUrl('/docs/next/cirgod#2-智能化运维')}>

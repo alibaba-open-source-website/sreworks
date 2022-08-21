@@ -132,7 +132,7 @@ const config = {
             items: [
               {
                 label: 'Github',
-                href: 'https://github.com/alibaba/sreworks',
+                href: 'https://github.com/alibaba/sreworks/issues',
               },{
                 html: '<div class="wechat"> <a class="wechat-label">钉钉交流群</a> <a class="wechat-img" rel="noreferrer noopener" aria-label="Wechat Group"><img src="https://static.kubevela.net/images/barnett-wechat.jpg" alt="Broker wechat to add you into the user group."></div>'
               },{
