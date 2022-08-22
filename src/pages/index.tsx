@@ -70,7 +70,7 @@ export default function Home(): JSX.Element {
                 <p><Translate>Provide general cloud application solutions (Open Application Model), integrate infrastructure capabilities, and reduce the threshold for enterprises to migrate applications to the cloud.</Translate></p>
                 <div className="card-link">
                   <Link
-                    to={useBaseUrl('/docs/next/ii05yo')}>
+                    to={useBaseUrl('/docs/ii05yo')}>
                     <Translate>Detail</Translate>
                   </Link>
                 </div>
@@ -80,7 +80,7 @@ export default function Home(): JSX.Element {
                 <p><Translate>Focusing on the process management of ops data, it provides a standardized ops data analysis platform including "data collection, real-time calculation, data service, and data application".</Translate></p>
                 <div className="card-link">
                   <Link
-                    to={useBaseUrl('/docs/next/cirgod')}>
+                    to={useBaseUrl('/docs/cirgod')}>
                     <Translate>Detail</Translate>
                   </Link>
                 </div>
@@ -90,7 +90,7 @@ export default function Home(): JSX.Element {
                 <p><Translate>The AIOps framework is built on the basis of perception-decision-execution cycle, combined with core aiops algorithm services such as anomaly detection/log clustering/root cause analysis, supports an "auto poliot" AIOps system.</Translate></p>
                 <div className="card-link">
                   <Link
-                    to={useBaseUrl('/docs/next/cirgod#2-智能化运维')}>
+                    to={useBaseUrl('/docs/cirgod#2-智能化运维')}>
                     <Translate>Detail</Translate>
                   </Link>
                 </div>
@@ -100,7 +100,7 @@ export default function Home(): JSX.Element {
                 <p><Translate>The platform is built based on k8s cluster, supports management of various cloud vendors or self-built k8s clusters, and cooperates with standard ops warehouses to easily realize multi-cluster management, dataOps and AIOps.</Translate></p>
                 <div className="card-link">
                   <Link
-                    to={useBaseUrl('/docs/next/moptgx')}>
+                    to={useBaseUrl('/docs/moptgx')}>
                     <Translate>Detail</Translate>
                   </Link>
                 </div>
@@ -110,7 +110,7 @@ export default function Home(): JSX.Element {
                 <p><Translate>The frontend low-code solution & backend scaffolding based on a large number of ops practice cases helps SRE engineer to quickly produce various ops platforms or tools to support the six major ops requirements of "delivery, monitoring, management, control, operation, and service".</Translate></p>
                 <div className="card-link">
                   <Link
-                    to={useBaseUrl('/docs/next/ap1wm6')}>
+                    to={useBaseUrl('/docs/ap1wm6')}>
                     <Translate>Detail</Translate>
                   </Link>
                 </div>
@@ -120,7 +120,7 @@ export default function Home(): JSX.Element {
                 <p><Translate>A unified job scheduling platform solve large-scale centralized scheduling problems and improve ops efficiency.</Translate></p>
                 <div className="card-link">
                   <Link
-                    to={useBaseUrl('/docs/next/cirgod#142-数据管理')}>
+                    to={useBaseUrl('/docs/cirgod#142-数据管理')}>
                     <Translate>Detail</Translate>
                   </Link>
                 </div>
@@ -139,7 +139,7 @@ export default function Home(): JSX.Element {
                     'button button--primary'
                   )}
                   style={{ marginRight: 20 }}
-                  to={useBaseUrl('/docs/next/cirgod')}>
+                  to={useBaseUrl('/docs/cirgod')}>
                   <Translate>Learn More</Translate>
                 </Link>
               </div>
@@ -163,7 +163,7 @@ export default function Home(): JSX.Element {
                     'button button--primary'
                   )}
                   style={{ marginRight: 20 }}
-                  to={useBaseUrl('/docs/next/ap1wm6')}>
+                  to={useBaseUrl('/docs/ap1wm6')}>
                   <Translate>Learn More</Translate>
                 </Link>
               </div>
@@ -181,7 +181,7 @@ export default function Home(): JSX.Element {
                     'button button--primary'
                   )}
                   style={{ marginRight: 20 }}
-                  to={useBaseUrl('/docs/next/ou9k9g')}>
+                  to={useBaseUrl('/docs/ou9k9g')}>
                   <Translate>Learn More</Translate>
                 </Link>
               </div>
