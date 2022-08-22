@@ -99,6 +99,27 @@ const config = {
                 }
             },
       ],
+      [
+        // 这里新增一个 多个doc的插件 专门用来 管理 社区 可以参考：https://docusaurus.io/docs/docs-multi-instance
+        // 为什么不用docs一起？ 因为 社区 不需要版本管理
+        '@docusaurus/plugin-content-docs',
+        {
+            id: 'community',
+            path: 'community',
+            routeBasePath: 'community',
+            sidebarPath: require.resolve('./sidebarsCommunity.js'),
+        },
+    ],
+    [
+        // 常见问题
+        '@docusaurus/plugin-content-docs',
+        {
+            id: 'column',
+            path: 'column',
+            routeBasePath: 'column',
+            sidebarPath: require.resolve('./sidebarsColumn.js'),
+        },
+    ],
   ],
 
   themeConfig:
@@ -120,6 +141,20 @@ const config = {
             position: 'right',
             to: 'docs/next/iwa896'
           },
+          {
+            label: '博客',
+            type: 'doc',
+            docId: 'index',
+            position: 'right',
+            docsPluginId: 'community',
+        },
+        {
+            label: '专栏',
+            type: 'doc',
+            docId: 'index',
+            position: 'right',
+            docsPluginId: 'column',
+        },
           {
             label: "Demo",
             position: 'right',
