@@ -142,6 +142,7 @@
         border-radius: 8px;
         padding: 48px;
         box-shadow: 0 5px 40px rgb(0 0 0 / 20%);
+        position: relative;
         cursor:pointer;
         p {
           color: black;
@@ -149,6 +150,9 @@
         }
         .card-link {
           text-align: right;
+          position:absolute;
+          right: 60px;
+          bottom: 40px;
         }
         &:hover {
           box-shadow: 0 6px 50px rgb(0 0 0 / 30%);
