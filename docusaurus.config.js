@@ -3,6 +3,9 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const versionConfig = {
+  latestVersion: "v1.2"
+}
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -13,12 +16,10 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   onBrokenLinks: "ignore",
-
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'alibaba', // Usually your GitHub org/user name.
   projectName: 'SREWorks', // Usually your repo name.
-
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -44,13 +45,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.json'),
           includeCurrentVersion: true,
-          lastVersion: 'v1.2',
+          lastVersion: versionConfig.latestVersion,
           editUrl: function(params){
              let docName = params.permalink.split("/")[params.permalink.split("/").length - 1].split(".")[0];
              return "https://www.yuque.com/sreworks-doc/docs/" + docName;
           },
-          versions: {
-          }
+          versions: {}
         },
         blog: {
           showReadingTime: true,
@@ -221,5 +221,4 @@ const config = {
       },
     }),
 };
-
 module.exports = config;
