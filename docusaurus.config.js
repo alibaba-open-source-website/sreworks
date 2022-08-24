@@ -139,7 +139,7 @@ const config = {
           {
             label: "FAQ",
             position: 'right',
-            to: 'docs/next/iwa896'
+            to: 'docs/iwa896'
           },
           {
             label: '博客',
