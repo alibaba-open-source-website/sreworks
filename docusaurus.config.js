@@ -142,14 +142,14 @@ const config = {
             to: 'docs/iwa896'
           },
           {
-            label: '博客',
+            label: 'Blog',
             type: 'doc',
             docId: 'index',
             position: 'right',
             docsPluginId: 'community',
         },
         {
-            label: '专栏',
+            label: 'Column',
             type: 'doc',
             docId: 'index',
             position: 'right',

@@ -8,5 +8,11 @@
   },
   "item.label.Demo":{
     "message": "在线体验"
+  },
+  "item.label.Column":{
+    "message": "专栏"
+  },
+  "item.label.Blog":{
+    "message": "博客"
   }
 }
