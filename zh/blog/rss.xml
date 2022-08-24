@@ -4,7 +4,7 @@
         <title>SREWorks Blog</title>
         <link>https://sreworks.opensource.alibaba.com/zh/blog</link>
         <description>SREWorks Blog</description>
-        <lastBuildDate>Mon, 22 Aug 2022 09:58:41 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 24 Aug 2022 07:31:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[index]]></title>
             <link>https://sreworks.opensource.alibaba.com/zh/blog/index</link>
             <guid>/index</guid>
-            <pubDate>Mon, 22 Aug 2022 09:58:41 GMT</pubDate>
+            <pubDate>Wed, 24 Aug 2022 07:31:57 GMT</pubDate>
         </item>
     </channel>
 </rss>
