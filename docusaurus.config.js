@@ -104,12 +104,12 @@ const config = {
         // 为什么不用docs一起？ 因为 社区 不需要版本管理
         '@docusaurus/plugin-content-docs',
         {
-            id: 'community',
-            path: 'community',
-            routeBasePath: 'community',
-            sidebarPath: require.resolve('./sidebarsCommunity.js'),
+            id: 'blogs',
+            path: 'blogs',
+            routeBasePath: 'blogs',
+            sidebarPath: require.resolve('./sidebarsBlog.js'),
         },
-    ],
+     ],
     [
         // 常见问题
         '@docusaurus/plugin-content-docs',
@@ -146,7 +146,7 @@ const config = {
             type: 'doc',
             docId: 'index',
             position: 'right',
-            docsPluginId: 'community',
+            docsPluginId: 'blogs',
         },
         {
             label: 'Column',
