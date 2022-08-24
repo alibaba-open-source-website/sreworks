@@ -5,3 +5,4 @@ build
 *.swp
 yuque-sync.sh
 wget-log
+wget-log.*
