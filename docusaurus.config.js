@@ -117,7 +117,7 @@ const config = {
             id: 'column',
             path: 'column',
             routeBasePath: 'column',
-            sidebarPath: require.resolve('./sidebarsColumn.js'),
+            sidebarPath: require.resolve('./sidebars-column.json'),
         },
     ],
   ],
