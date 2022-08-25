@@ -67,7 +67,7 @@ export default function Home(): JSX.Element {
             <div className="main-body-two-description">
               <a className="description-card">
                 <h2><Translate>DevOps</Translate></h2>
-                <p><Translate>Provide general cloud application solutions (Open Application Model), integrate infrastructure capabilities, and reduce the threshold for enterprises to migrate applications to the cloud.</Translate></p>
+                <p><Translate>A general cloud application solution (Open Application Model), integrates infrastructure capabilities, and reduces the threshold for enterprises to migrate applications to the cloud.</Translate></p>
                 <div className="card-link">
                   <Link
                     to={useBaseUrl('/docs/ii05yo')}>
@@ -77,7 +77,7 @@ export default function Home(): JSX.Element {
               </a>
               <a className="description-card">
                 <h2><Translate>DataOps</Translate></h2>
-                <p><Translate>Focusing on the process management of ops data, it provides a standardized ops data analysis platform including "data collection, real-time calculation, data service, and data application".</Translate></p>
+                <p><Translate>A process management focused on the ops data, provided a standardized ops data analysis platform including "data collection, real-time calculation, data service, and data application".</Translate></p>
                 <div className="card-link">
                   <Link
                     to={useBaseUrl('/docs/cirgod')}>
@@ -87,7 +87,7 @@ export default function Home(): JSX.Element {
               </a>
               <a className="description-card">
                 <h2><Translate>AIOps</Translate></h2>
-                <p><Translate>The AIOps framework is built on the basis of perception-decision-execution cycle, combined with core aiops algorithm services such as anomaly detection/log clustering/root cause analysis, supports an "auto poliot" AIOps system.</Translate></p>
+                <p><Translate>An AIOps framework built on the basis of perception-decision-execution cycle, combined with core aiops algorithm services such as anomaly detection/log clustering/root cause analysis, and supported an "auto pilot" AIOps system.</Translate></p>
                 <div className="card-link">
                   <Link
                     to={useBaseUrl('/docs/cirgod#2-智能化运维')}>
@@ -97,7 +97,7 @@ export default function Home(): JSX.Element {
               </a>
               <a className="description-card">
                 <h2><Translate>Multi Cloud Cluster Management</Translate></h2>
-                <p><Translate>The platform is built based on k8s cluster, supports management of various cloud vendors or self-built k8s clusters, and cooperates with standard ops warehouses to easily realize multi-cluster management, dataOps and AIOps.</Translate></p>
+                <p><Translate>A platform based on k8s cluster, supported management of various cloud vendors or self-built k8s clusters, and cooperated with standard ops warehouses to easily realize multi-cluster management, dataOps and AIOps.</Translate></p>
                 <div className="card-link">
                   <Link
                     to={useBaseUrl('/docs/moptgx')}>
@@ -107,7 +107,7 @@ export default function Home(): JSX.Element {
               </a>
               <a className="description-card">
                 <h2><Translate>Ops application factory</Translate></h2>
-                <p><Translate>The frontend low-code solution & backend scaffolding based on a large number of ops practice cases helps SRE engineer to quickly produce various ops platforms or tools to support the six major ops requirements of "delivery, monitoring, management, control, operation, and service".</Translate></p>
+                <p><Translate>A frontend low-code solution & backend scaffolding based on a large number of ops practice cases, helped SRE engineer to quickly produce various ops platforms or tools, and supported the six major ops requirements of "delivery, monitoring, management, control, operation and service".</Translate></p>
                 <div className="card-link">
                   <Link
                     to={useBaseUrl('/docs/ap1wm6')}>
@@ -116,8 +116,8 @@ export default function Home(): JSX.Element {
                 </div>
               </a>
               <a className="description-card">
-                <h2><Translate>Automation</Translate></h2>
-                <p><Translate>A unified job scheduling platform solve large-scale centralized scheduling problems and improve ops efficiency.</Translate></p>
+                <h2><Translate>Automation Ops</Translate></h2>
+                <p><Translate>A unified job scheduling platform solved large-scale centralized scheduling problems in the unified job scheduling platform, improved ops efficiency.</Translate></p>
                 <div className="card-link">
                   <Link
                     to={useBaseUrl('/docs/cirgod#142-数据管理')}>

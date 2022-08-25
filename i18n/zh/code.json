@@ -32,7 +32,7 @@
   "DataOps":{
     "message": "数据运维平台(DataOps)"
   },
-  "Focusing on the process management of ops data, it provides a standardized ops data analysis platform including \"data collection, real-time calculation, data service, and data application\".":{
+  "A process management focused on the ops data, provided a standardized ops data analysis platform including \"data collection, real-time calculation, data service, and data application\".":{
     "message": "围绕运维数据的链路管理，提供包含“数据采集、实时计算、数据服务、数据应用”的标准化运维数据分析平台。"
   },
   "The dataops & aiops system incubated in Alibaba's big data scenarios can easily support hyperscale clusters, ranging from application ops to multi-cloud management solutions, from dataops warehouses to aiops algorithms. All services are readily available in SREWorks.":{
@@ -44,10 +44,10 @@
   "The low-code frontend IDE provides both agility and full business function support. Rich, flexible and practical frontend widget market, open custom widget integration capabilities, to meet the needs of users in diverse personalized scenarios.":{
     "message": "低代码前端设计器既具备敏捷性又提供全面的业务功能支持。丰富、灵活、实用的前端组件市场，开放自定义组件集成能力，满足用户多样化个性化场景需求。"
   }, 
-  "Provide general cloud application solutions (Open Application Model), integrate infrastructure capabilities, and reduce the threshold for enterprises to migrate applications to the cloud.":{
+  "A general cloud application solution (Open Application Model), integrates infrastructure capabilities, and reduces the threshold for enterprises to migrate applications to the cloud.":{
     "message": "提供通用云原生应用解决方案(开放应用模型OAM)，整合基础运维能力，降低企业应用上云门槛。"
   },
-  "The AIOps framework is built on the basis of perception-decision-execution cycle, combined with core aiops algorithm services such as anomaly detection/log clustering/root cause analysis, supports an \"auto poliot\" AIOps system.":{
+  "An AIOps framework built on the basis of perception-decision-execution cycle, combined with core aiops algorithm services such as anomaly detection/log clustering/root cause analysis, and supported an \"auto pilot\" AIOps system.":{
     "message": "基于“感知、决策、执行”的智能运维框架，结合异常检测/日志聚类/根因分析等核心智能算法服务，构筑无人值守的智能运维体系。"
   },
   "AIOps":{
@@ -56,19 +56,19 @@
   "Multi Cloud Cluster Management":{
     "message": "多云管理"
   },
-  "The platform is built based on k8s cluster, supports management of various cloud vendors or self-built k8s clusters, and cooperates with standard ops warehouses to easily realize multi-cluster management, dataOps and AIOps.":{
+  "A platform based on k8s cluster, supported management of various cloud vendors or self-built k8s clusters, and cooperated with standard ops warehouses to easily realize multi-cluster management, dataOps and AIOps.":{
     "message": "平台基于标准K8s集群构建，支持纳管各种云厂商或自建的k8s集群，配合标准运维数仓，轻松实现多集群管理以及数据化智能化管理。"
   },
   "Ops application factory":{
     "message": "运维应用工厂"
   },
-  "Automation":{
+  "Automation Ops":{
     "message": "自动化运维"
   },
-  "A unified job scheduling platform solve large-scale centralized scheduling problems and improve ops efficiency.":{
+  "A unified job scheduling platform solved large-scale centralized scheduling problems in the unified job scheduling platform, improved ops efficiency.":{
     "message": "统一的作业调度平台，解决大规模集中调度问题，提升运维效率。"   
   },
-  "The frontend low-code solution & backend scaffolding based on a large number of ops practice cases helps SRE engineer to quickly produce various ops platforms or tools to support the six major ops requirements of \"delivery, monitoring, management, control, operation, and service\".":{
+  "A frontend low-code solution & backend scaffolding based on a large number of ops practice cases, helped SRE engineer to quickly produce various ops platforms or tools, and supported the six major ops requirements of \"delivery, monitoring, management, control, operation and service\".":{
     "message": "基于大量运维实践案例沉淀的前端低代码和后端脚手架方案，帮助运维工程师快速产出各种运维平台或工具，支撑”交付、监测、管理、控制、运营、服务”六大运维需求。"
   },
   "theme.ErrorPageContent.title": {
