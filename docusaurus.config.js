@@ -53,8 +53,12 @@ const config = {
           versions: {}
         },
         blog: {
+           postsPerPage: 3,
            //showReadingTime: true,
         },
+        //column: {
+        //   postsPerPage: 3,
+        //},
         theme: {
           customCss: require.resolve('./src/css/sreworks.scss'),
         },
