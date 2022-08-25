@@ -53,11 +53,7 @@ const config = {
           versions: {}
         },
         blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+           //showReadingTime: true,
         },
         theme: {
           customCss: require.resolve('./src/css/sreworks.scss'),
@@ -99,25 +95,14 @@ const config = {
                 }
             },
       ],
-      [
-        // 这里新增一个 多个doc的插件 专门用来 管理 社区 可以参考：https://docusaurus.io/docs/docs-multi-instance
-        // 为什么不用docs一起？ 因为 社区 不需要版本管理
-        '@docusaurus/plugin-content-docs',
-        {
-            id: 'blogs',
-            path: 'blogs',
-            routeBasePath: 'blogs',
-            sidebarPath: require.resolve('./sidebarsBlog.js'),
-        },
-     ],
     [
         // 常见问题
-        '@docusaurus/plugin-content-docs',
+        '@docusaurus/plugin-content-blog',
         {
             id: 'column',
             path: 'column',
             routeBasePath: 'column',
-            sidebarPath: require.resolve('./sidebars-column.json'),
+            //sidebarPath: require.resolve('./sidebars-column.json'),
         },
     ],
   ],
@@ -142,18 +127,24 @@ const config = {
             to: 'docs/iwa896'
           },
           {
+            to: 'blog',
             label: 'Blog',
-            type: 'doc',
-            docId: 'index',
             position: 'right',
-            docsPluginId: 'blogs',
-        },
+          },
+//          {
+//            label: 'Blog',
+//            type: 'doc',
+//            docId: 'index',
+//            position: 'right',
+ //           docsPluginId: 'blogs',
+  //      },
         {
             label: 'Column',
-            type: 'doc',
-            docId: 'index',
+            to: 'column',
+            //type: 'blog',
+            //docId: 'index',
             position: 'right',
-            docsPluginId: 'column',
+            //docsPluginId: 'column',
         },
           {
             label: "Demo",
