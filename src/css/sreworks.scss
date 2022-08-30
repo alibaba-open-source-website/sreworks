@@ -130,6 +130,14 @@
         background: none;
       }
 
+      video::-webkit-media-controls-current-time-display {
+         text-shadow: 0 1px 5px rgb(0 0 0 / 99%);
+      }
+      video::-webkit-media-controls-time-remaining-display {
+         text-shadow: 0 1px 5px rgb(0 0 0 / 99%);
+      }
+
+
       .offShadow {
         box-shadow: 0 0 0 transparent
       }
@@ -154,9 +162,9 @@
       grid-template-rows: 1fr 1fr;
       .description-card {
         background-color: #fff;
-        border-radius: 8px;
+        //border-radius: 8px;
         padding: 48px;
-        box-shadow: 0 5px 40px rgb(0 0 0 / 20%);
+        box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
         position: relative;
         cursor:pointer;
         p {
