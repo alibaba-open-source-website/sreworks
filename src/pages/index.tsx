@@ -23,6 +23,9 @@ export default function Home(): JSX.Element {
   const [showBtn, setShowBtn] = useState(false);
   const switchOff = ()=> setShowBtn(false)
   const switchOn = ()=> setShowBtn(true)
+
+  const [showShadow, setShowShadow] = useState(false);
+  const offShadow = ()=> setShowShadow(true)
   // const doClick = ()=> {
   //   if(showBtn) {
   //     switchOff()
@@ -65,9 +68,9 @@ export default function Home(): JSX.Element {
                 </span>
               </div>
             </div>
-            <div className="main-body-one-right" onMouseEnter={switchOn} onMouseLeave={switchOff}>
+            <div className="main-body-one-right" onClick={offShadow} onMouseEnter={switchOn} onMouseLeave={switchOff}>
               {/* <img alt="homeImage" src={require('@site/static/img/homeImage.png').default}></img> */}
-              <video width="100%" poster={require('@site/static/img/poster.png').default} height="380" preload="auto" src='https://qianmo-test.oss-cn-beijing.aliyuncs.com/sreworksdemo.mp4' controls={showBtn} />
+              <video className={showShadow? 'offShadow' : ""} width="100%" poster={require('@site/static/img/homeImage.png').default} height="320" preload="auto" src='https://qianmo-test.oss-cn-beijing.aliyuncs.com/sreworksdemo.mp4' controls={showBtn} />
             </div>
           </section>
           <section className="main-body-two">
