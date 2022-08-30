@@ -70,7 +70,7 @@ export default function Home(): JSX.Element {
             </div>
             <div className="main-body-one-right" onClick={offShadow} onMouseEnter={switchOn} onMouseLeave={switchOff}>
               {/* <img alt="homeImage" src={require('@site/static/img/homeImage.png').default}></img> */}
-              <video className={showShadow? 'offShadow' : ""} preload="auto" src='https://sreworks.oss-cn-beijing.aliyuncs.com/video/introduce2.mp4' controls={showBtn} />
+              <video className={showShadow? 'offShadow' : ""} width="100%" preload="auto" src='https://sreworks.oss-cn-beijing.aliyuncs.com/video/introduce2.mp4' controls={showBtn} />
               {/*<video className={showShadow? 'offShadow' : ""} poster={require('@site/static/img/homeImage.png').default} preload="auto" src='https://sreworks.oss-cn-beijing.aliyuncs.com/video/introduce.mp4' controls={showBtn} /> */}
             </div>
           </section>
