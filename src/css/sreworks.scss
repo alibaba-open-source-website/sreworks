@@ -110,11 +110,14 @@
       }
     }
     .main-body-one-right {
-      img {
-        height: 340px;
+      position: relative;
+      video {
         cursor: pointer;
+        border-radius: 4px;
+        box-shadow:  0 5px 40px rgb(0 0 0 / 20%);
+        padding-bottom: 30px;
         &:hover {
-          box-shadow:  0 5px 40px rgb(0 0 0 / 20%);
+          box-shadow:  0 4px 20px rgb(0 0 0 / 40%);
           cursor: pointer;
         }
       }

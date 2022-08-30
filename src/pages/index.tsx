@@ -8,7 +8,7 @@ import GitHubButton from 'react-github-btn';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
-
+import { useState } from 'react';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -20,6 +20,16 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
+  const [showBtn, setShowBtn] = useState(false);
+  const switchOff = ()=> setShowBtn(false)
+  const switchOn = ()=> setShowBtn(true)
+  // const doClick = ()=> {
+  //   if(showBtn) {
+  //     switchOff()
+  //   } else {
+  //     switchOn()
+  //   }
+  // }
   return (
     <Layout
       title={`Cloud Native DataOps & AIOps Platform`}
@@ -55,8 +65,9 @@ export default function Home(): JSX.Element {
                 </span>
               </div>
             </div>
-            <div className="main-body-one-right">
-              <img alt="homeImage" src={require('@site/static/img/homeImage.png').default}></img>
+            <div className="main-body-one-right" onMouseEnter={switchOn} onMouseLeave={switchOff}>
+              {/* <img alt="homeImage" src={require('@site/static/img/homeImage.png').default}></img> */}
+              <video width="100%" poster={require('@site/static/img/poster.png').default} height="380" preload="auto" src='https://qianmo-test.oss-cn-beijing.aliyuncs.com/sreworksdemo.mp4' controls={showBtn} />
             </div>
           </section>
           <section className="main-body-two">
