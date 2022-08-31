@@ -7,12 +7,12 @@ date: 2022-03-25T03:39:06.000Z
 
 <a name="lGB4U"></a>
 
-### 1，提交Issue
+### 提交Issue
 在GitHub Alibaba SREWorks仓库下 [https://github.com/alibaba/SREWorks/issues](https://github.com/alibaba/SREWorks/issues) 可以提交Issue，会有相关同学跟进您的Issue处理。
 
 <a name="gxQpU"></a>
 
-### 2，贡献代码
+### 贡献代码
 可以提交代码MR请求，在相关同学完成Review后将合入您的代码
 
 
