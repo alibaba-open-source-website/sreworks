@@ -166,7 +166,8 @@ const config = {
             position: 'right',
           },
           {
-            html: "<div class='navbar__item github-link-logo'><a href='https://github.com/alibaba/sreworks'></a></div>",
+            className: 'header-github-link',
+            // html: "<div class='navbar__item github-link-logo'><a href='https://github.com/alibaba/sreworks'></a></div>",
             position: 'right',
             href: 'https://github.com/alibaba/sreworks',
           },
