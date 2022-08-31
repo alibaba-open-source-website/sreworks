@@ -29,7 +29,6 @@
   }
   .wechat {
     .wechat-label {
-      color: var(--ifm-color-primary);
       line-height: 2;
       cursor: pointer;
     }
@@ -40,6 +39,10 @@
     }
   
     &:hover {
+      .wechat-label {
+         text-decoration: underline;
+         color: var(--ifm-color-primary);
+      }
       .wechat-img {
         display: block;
       }

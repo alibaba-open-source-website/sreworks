@@ -191,15 +191,31 @@ const config = {
         style: 'dark',
         links: [
           {
+             title: '文档',
+             items: [
+               {
+                  label: '快速安装',
+                  href: '/docs/rr5g10'
+               },{
+
+                  label: '核心思想',
+                  href: '/docs/eg91va',
+               },{
+                  label: '数智运维',
+                  href: '/docs/cirgod',
+              }
+             ]
+          },
+          {
             title: '社区',
             items: [
               {
                 label: 'Github',
                 href: 'https://github.com/alibaba/sreworks/issues',
               },{
-                html: '<div class="wechat"> <a class="wechat-label">钉钉交流群</a> <a class="wechat-img" rel="noreferrer noopener" aria-label="DingTalk Group"><img src="https://sreworks.oss-cn-beijing.aliyuncs.com/logo/ding.jpg"></div>'
+                html: '<div class="wechat"> <span class="wechat-label">钉钉交流群</span> <a class="wechat-img" rel="noreferrer noopener" aria-label="DingTalk Group"><img src="https://sreworks.oss-cn-beijing.aliyuncs.com/logo/ding.jpg"></div>'
               },{
-                html: '<div class="wechat"> <a class="wechat-label">微信交流群</a> <a class="wechat-img" rel="noreferrer noopener" aria-label="Wechat Group"><img src="https://sreworks.oss-cn-beijing.aliyuncs.com/logo/weixin-helper.jpg" alt="Broker wechat to add you into the user group."></div>'
+                html: '<div class="wechat"> <span class="wechat-label">微信交流群</span> <a class="wechat-img" rel="noreferrer noopener" aria-label="Wechat Group"><img src="https://sreworks.oss-cn-beijing.aliyuncs.com/logo/weixin-helper.jpg" alt="Broker wechat to add you into the user group."></div>'
               }
             ],
           }
