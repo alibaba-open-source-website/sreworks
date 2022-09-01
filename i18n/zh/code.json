@@ -2,7 +2,7 @@
   "Cloud Native DataOps & AIOps Platform": {
     "message": "云原生数智运维平台"
   },
-  "SREWorks focuses on an application-centric development model, provides a one-stop cloud-native dataOps&AIOps SaaS management suite. It supports the two core capabilities of enterprise application and resource management and ops development, and helps enterprises quickly achieve the delivery goals of cloud-native applications and resources.": {
+  "SREWorks focuses on an application-centric development model, provides a one-stop cloud-native dataOps&AIOps SaaS management suite. It supports the two core capabilities of enterprise: application&resource management and ops development, and helps enterprises quickly achieve the delivery goals of cloud-native applications and resources.":{
     "message": "SREWorks 专注于以应用为中心的开发模式，提供一站式云原生数智化运维SaaS(软件即服务)管理套件。支撑企业的应用及资源管理和运维开发两大核心能力，帮助企业快速实现云原生应用及资源的交付目标。"
   },
   "Out-of-the-box operation & management solutions":{

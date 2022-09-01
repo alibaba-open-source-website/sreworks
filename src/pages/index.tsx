@@ -45,7 +45,7 @@ export default function Home(): JSX.Element {
             <div className='main-body-one-left'>
               <h1 className="main-body-one-left-title"><Translate>Cloud Native DataOps & AIOps Platform</Translate></h1>
               <div className="main-body-one-left-description">
-                <Translate>SREWorks focuses on an application-centric development model, provides a one-stop cloud-native dataOps&AIOps SaaS management suite. It supports the two core capabilities of enterprise application and resource management and ops development, and helps enterprises quickly achieve the delivery goals of cloud-native applications and resources.</Translate>
+                <Translate>SREWorks focuses on an application-centric development model, provides a one-stop cloud-native dataOps&AIOps SaaS management suite. It supports the two core capabilities of enterprise: application&resource management and ops development, and helps enterprises quickly achieve the delivery goals of cloud-native applications and resources.</Translate>
               </div>
               <div className="main-body-one-left-button-panel">
                 <Link
