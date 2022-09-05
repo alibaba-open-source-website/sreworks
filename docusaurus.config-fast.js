@@ -160,12 +160,6 @@ const config = {
             position: 'right',
             to: 'docs'
           },
-        //   {
-        //     type: 'docsVersionDropdown',
-        //     position: 'right',
-        //     dropdownActiveClassDisabled: true,
-        //     activeBaseRegex: 'docs/(next|v8)'
-        //   },
           {
             type: 'localeDropdown',
             position: 'right',
