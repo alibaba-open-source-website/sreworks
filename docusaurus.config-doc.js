@@ -44,21 +44,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.json'),
-          //includeCurrentVersion: true,
-          //lastVersion: versionConfig.latestVersion,
           editUrl: function(params){
              let docName = params.permalink.split("/")[params.permalink.split("/").length - 1].split(".")[0];
              return "https://www.yuque.com/sreworks-doc/docs/" + docName;
           },
-          //versions: {}
         },
-        // blog: {
-        //    postsPerPage: 3,
-        //    //showReadingTime: true,
-        // },
-        //column: {
-        //   postsPerPage: 3,
-        //},
         theme: {
           customCss: require.resolve('./src/css/sreworks.scss'),
         },
@@ -84,36 +74,6 @@ const config = {
 
         items: [
           {
-            label: "FAQ",
-            position: 'right',
-            to: 'docs/iwa896'
-          },
-        //   {
-        //     to: 'blog',
-        //     label: 'Blog',
-        //     position: 'right',
-        //   },
-//          {
-//            label: 'Blog',
-//            type: 'doc',
-//            docId: 'index',
-//            position: 'right',
- //           docsPluginId: 'blogs',
-  //      },
-        // {
-        //     label: 'Column',
-        //     to: 'column',
-        //     //type: 'blog',
-        //     //docId: 'index',
-        //     position: 'right',
-        //     //docsPluginId: 'column',
-        // },
-          {
-            label: "Demo",
-            position: 'right',
-            href: 'https://wj.qq.com/s2/10565748/53da/',
-          },
-          {
             label: "docs",
             position: 'right',
             to: 'docs'
@@ -121,12 +81,6 @@ const config = {
           {
             type: 'localeDropdown',
             position: 'right',
-          },
-          {
-            className: 'header-github-link',
-            // html: "<div class='navbar__item github-link-logo'><a href='https://github.com/alibaba/sreworks'></a></div>",
-            position: 'right',
-            href: 'https://github.com/alibaba/sreworks',
           },
         ],
       },
