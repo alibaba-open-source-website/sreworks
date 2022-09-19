@@ -9,7 +9,7 @@ export default function Navbar() {
     if (window.frames.length != parent.frames.length) {
       footerComp = (<div></div>)
     }
-    return (<div></div>)
+    return footerComp
   } else {
     return (
       <NavbarLayout>
