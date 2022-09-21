@@ -52,7 +52,7 @@ def mdx_body(meta, content):
     meta_content = "---\n"
     meta_content += "title: " + meta["title"] + "\n"
     meta_content += "date: " + meta["created_at"] + "\n"
-    meta_content += "---\n\n"
+    meta_content += "---\n\n\n"
 
     if '"format":"lakesheet"' in content:
         #content = json.dumps(meta)
