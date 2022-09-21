@@ -65,9 +65,6 @@ def mdx_body(meta, content):
     content = content.replace('```json', "```json\n")
     content = content.replace('```javascript', "```js\n")
 
-    # 代码块中的export特别敏感，还没想到好的办法，先切分开
-    content = content.replace('export', "ex port")
-
     # <a name="8plYw"></a>
     # ### 核心场景
     # a标签和标题处于上下行时会出现问题，需要中间加一个空行

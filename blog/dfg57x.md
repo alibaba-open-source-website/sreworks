@@ -34,26 +34,26 @@ SREWorks团队参考helm/rpm等常见软件仓库模型，设计了SREWorks的�
 在执行 `./build.sh` 命令前可传入下列的环境变量来改变资源地址，如不传入则使用默认值
 ```bash
 # 容器镜像
-ex port SW_PYTHON3_IMAGE="python:3.9.12-alpine"
-ex port MIGRATE_IMAGE="migrate/migrate"
-ex port MAVEN_IMAGE="maven:3.8.3-adoptopenjdk-11"
-ex port GOLANG_IMAGE="golang:alpine"
-ex port GOLANG_BUILD_IMAGE="golang:1.16"
-ex port DISTROLESS_IMAGE="sreworks-registry.cn-beijing.cr.aliyuncs.com/mirror/distroless-static:nonroot"
+export SW_PYTHON3_IMAGE="python:3.9.12-alpine"
+export MIGRATE_IMAGE="migrate/migrate"
+export MAVEN_IMAGE="maven:3.8.3-adoptopenjdk-11"
+export GOLANG_IMAGE="golang:alpine"
+export GOLANG_BUILD_IMAGE="golang:1.16"
+export DISTROLESS_IMAGE="sreworks-registry.cn-beijing.cr.aliyuncs.com/mirror/distroless-static:nonroot"
 
 # 软件仓库
-ex port APK_REPO_DOMAIN="mirrors.tuna.tsinghua.edu.cn"
-ex port PYTHON_PIP="http://mirrors.aliyun.com/pypi/simple"
-ex port GOPROXY="https://goproxy.cn"
-ex port MAVEN_SETTINGS_XML="https://sreworks.oss-cn-beijing.aliyuncs.com/resource/settings.xml"
+export APK_REPO_DOMAIN="mirrors.tuna.tsinghua.edu.cn"
+export PYTHON_PIP="http://mirrors.aliyun.com/pypi/simple"
+export GOPROXY="https://goproxy.cn"
+export MAVEN_SETTINGS_XML="https://sreworks.oss-cn-beijing.aliyuncs.com/resource/settings.xml"
 
 # 二进制命令
-ex port HELM_BIN_URL="https://abm-storage.oss-cn-zhangjiakou.aliyuncs.com/lib/helm"
-ex port KUSTOMIZE_BIN_URL="https://abm-storage.oss-cn-zhangjiakou.aliyuncs.com/lib/kustomize"
-ex port MINIO_CLIENT_URL="https://sreworks.oss-cn-beijing.aliyuncs.com/bin/mc-linux-amd64"
+export HELM_BIN_URL="https://abm-storage.oss-cn-zhangjiakou.aliyuncs.com/lib/helm"
+export KUSTOMIZE_BIN_URL="https://abm-storage.oss-cn-zhangjiakou.aliyuncs.com/lib/kustomize"
+export MINIO_CLIENT_URL="https://sreworks.oss-cn-beijing.aliyuncs.com/bin/mc-linux-amd64"
 
 # SREWorks内置应用包
-ex port SREWORKS_BUILTIN_PACKAGE_URL="https://sreworks.oss-cn-beijing.aliyuncs.com/packages"
+export SREWORKS_BUILTIN_PACKAGE_URL="https://sreworks.oss-cn-beijing.aliyuncs.com/packages"
 
 ...
 ```
@@ -97,7 +97,7 @@ ex port SREWORKS_BUILTIN_PACKAGE_URL="https://sreworks.oss-cn-beijing.aliyuncs.c
 <a name="D55JT"></a>
 
 #### 指标采集能力增强
-纳管集群通过metricbeat支持采集prometheus ex porter能力，默认pod(ex porter)标签满足 sreworks-prometheus-scrape-metric: enable具备服务自动发现能力，自动拉取ex porter的/metrics接口数据。<br />前序版本默认仅支持针对Service标签满足 sreworks-telemetry-metric: enable 具备服务自动发现和指标接口定时pull能力，考虑到Prometheus已经成为云原生领域监控的事实标准，因此在v1.2版本中增强指标采集能力，即支持从用户服务中主动pull指标数据，也支持主动从prometheus ex porter pull指标数据。
+纳管集群通过metricbeat支持采集prometheus exporter能力，默认pod(exporter)标签满足 sreworks-prometheus-scrape-metric: enable具备服务自动发现能力，自动拉取exporter的/metrics接口数据。<br />前序版本默认仅支持针对Service标签满足 sreworks-telemetry-metric: enable 具备服务自动发现和指标接口定时pull能力，考虑到Prometheus已经成为云原生领域监控的事实标准，因此在v1.2版本中增强指标采集能力，即支持从用户服务中主动pull指标数据，也支持主动从prometheus exporter pull指标数据。
 
 <a name="GxjzR"></a>
 

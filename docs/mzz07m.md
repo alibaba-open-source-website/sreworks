@@ -118,26 +118,26 @@ helm install sreworks $SW_ROOT/chart/sreworks-chart \
 在执行 `./build.sh` 命令前可传入下列的环境变量来改变资源地址，如不传入则使用默认值。
 ```bash
 # 容器镜像
-ex port SW_PYTHON3_IMAGE="python:3.9.12-alpine"
-ex port MIGRATE_IMAGE="migrate/migrate"
-ex port MAVEN_IMAGE="maven:3.8.3-adoptopenjdk-11"
-ex port GOLANG_IMAGE="golang:alpine"
-ex port GOLANG_BUILD_IMAGE="golang:1.16"
-ex port DISTROLESS_IMAGE="sreworks-registry.cn-beijing.cr.aliyuncs.com/mirror/distroless-static:nonroot"
+export SW_PYTHON3_IMAGE="python:3.9.12-alpine"
+export MIGRATE_IMAGE="migrate/migrate"
+export MAVEN_IMAGE="maven:3.8.3-adoptopenjdk-11"
+export GOLANG_IMAGE="golang:alpine"
+export GOLANG_BUILD_IMAGE="golang:1.16"
+export DISTROLESS_IMAGE="sreworks-registry.cn-beijing.cr.aliyuncs.com/mirror/distroless-static:nonroot"
 
 # 软件仓库
-ex port APK_REPO_DOMAIN="mirrors.tuna.tsinghua.edu.cn"
-ex port PYTHON_PIP="http://mirrors.aliyun.com/pypi/simple"
-ex port GOPROXY="https://goproxy.cn"
-ex port MAVEN_SETTINGS_XML="https://sreworks.oss-cn-beijing.aliyuncs.com/resource/settings.xml"
+export APK_REPO_DOMAIN="mirrors.tuna.tsinghua.edu.cn"
+export PYTHON_PIP="http://mirrors.aliyun.com/pypi/simple"
+export GOPROXY="https://goproxy.cn"
+export MAVEN_SETTINGS_XML="https://sreworks.oss-cn-beijing.aliyuncs.com/resource/settings.xml"
 
 # 二进制命令
-ex port HELM_BIN_URL="https://abm-storage.oss-cn-zhangjiakou.aliyuncs.com/lib/helm"
-ex port KUSTOMIZE_BIN_URL="https://abm-storage.oss-cn-zhangjiakou.aliyuncs.com/lib/kustomize"
-ex port MINIO_CLIENT_URL="https://sreworks.oss-cn-beijing.aliyuncs.com/bin/mc-linux-amd64"
+export HELM_BIN_URL="https://abm-storage.oss-cn-zhangjiakou.aliyuncs.com/lib/helm"
+export KUSTOMIZE_BIN_URL="https://abm-storage.oss-cn-zhangjiakou.aliyuncs.com/lib/kustomize"
+export MINIO_CLIENT_URL="https://sreworks.oss-cn-beijing.aliyuncs.com/bin/mc-linux-amd64"
 
 # SREWorks内置应用包
-ex port SREWORKS_BUILTIN_PACKAGE_URL="https://sreworks.oss-cn-beijing.aliyuncs.com/packages"
+export SREWORKS_BUILTIN_PACKAGE_URL="https://sreworks.oss-cn-beijing.aliyuncs.com/packages"
 ```
 
 <a name="V9FYX"></a>
@@ -216,7 +216,7 @@ ex port SREWORKS_BUILTIN_PACKAGE_URL="https://sreworks.oss-cn-beijing.aliyuncs.c
 --set appmanagerbase.openebs.webhook.imageTag="2.12.2" \
 --set appmanagerbase.openebs.helper.image="openebs/linux-utils" \
 --set appmanagerbase.openebs.helper.imageTag="3.1.0" \
---set appmanagerbase.openebs.policies.monitoring.image="openebs/m-ex porter" \
+--set appmanagerbase.openebs.policies.monitoring.image="openebs/m-exporter" \
 --set appmanagerbase.openebs.policies.monitoring.imageTag="2.12.2" \
 ```
 
