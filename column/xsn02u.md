@@ -1,8 +1,9 @@
 ---
 title: 基于Elasticsearch生长的SREWorks数据化运维体系
 date: 2022-08-22T23:07:28.000Z
+toc_max_heading_level: 6
+toc_min_heading_level: 2
 ---
-
 
 开源Elasticsearch是一个基于Lucene的实时分布式的搜索与分析引擎，是遵从Apache开源条款的一款开源产品，是当前主流的企业级搜索引擎。作为一款基于RESTful API的分布式服务，Elasticsearch可以快速地、近乎于准实时地存储、查询和分析超大数据集，通常被用来作为构建复杂查询特性和需求强大应用的基础引擎。
 

@@ -1,8 +1,9 @@
 ---
 title: 7.4 widget 开发规范
 date: 2022-08-26T09:46:04.000Z
+toc_max_heading_level: 6
+toc_min_heading_level: 2
 ---
-
 
 <a name="zwGUy"></a>
 
