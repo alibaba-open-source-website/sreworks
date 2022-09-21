@@ -4,10 +4,10 @@ date: 2022-03-25T03:39:17.000Z
 ---
 
 
-源码构建场景适合企业内网环境以及动手能力强想要深入分析改造的用户。
-<a name="kliWz"></a>
 
-# 1. SREWorks源码构建
+<a name="L1iH8"></a>
+
+## 1. SREWorks源码构建
 <a name="uSNSk"></a>
 
 ### 构建环境准备
@@ -62,9 +62,9 @@ docker login --username=sre****s your-registry.***.com
 
 
 
-<a name="jiRmc"></a>
+<a name="RwbbH"></a>
 
-# 2. SREWorks部署&构建运维应用容器镜像
+## 2. SREWorks部署&构建运维应用容器镜像
  步骤与快速安装大致相同，替换helm install参数， 触发运维应用来自源码的容器镜像构建，注意按照附录1和附录2替换参数
 ```shell
 helm install sreworks $SW_ROOT/chart/sreworks-chart \
@@ -77,9 +77,9 @@ helm install sreworks $SW_ROOT/chart/sreworks-chart \
 
 ```
 
-<a name="jPt3U"></a>
+<a name="sWon6"></a>
 
-# 附录1. Helm安装参数清单
+## 附录1. Helm安装参数清单
 如果需要构建完的运维应用上传到自定义容器镜像仓库，请在执行helm安装命令时候传入以下的参数
 ```shell
 # 平台名称
@@ -105,9 +105,10 @@ helm install sreworks $SW_ROOT/chart/sreworks-chart \
 --set source.repo="https://code.aliyun.com/sreworks_public/mirror.git"
 
 ```
-<a name="CdF5g"></a>
 
-# 附录2. 源码构建依赖资源清单
+<a name="fWtQz"></a>
+
+## 附录2. 源码构建依赖资源清单
 在纯内网构建或者部分资源替换场景，需要用户自行准备资源，可参考下面的清单。
 
 <a name="NQ8Vf"></a>
