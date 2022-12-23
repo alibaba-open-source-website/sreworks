@@ -42,8 +42,30 @@
                     "type": "doc"
                 },
                 {
+                    "collapsed": true,
+                    "items": [
+                        {
+                            "id": "vnlbio04odgkllih",
+                            "label": "2.2.1 \u5728minikube\u4e0b\u5b89\u88c5SREWorks",
+                            "type": "doc"
+                        },
+                        {
+                            "id": "hwchqke3tibvlg7t",
+                            "label": "2.2.2 \u5728K3s\u4e0b\u5b89\u88c5SREWorks",
+                            "type": "doc"
+                        },
+                        {
+                            "id": "xozhprslhue7ue5l",
+                            "label": "2.2.3 \u5728KubeSphere/KubeKey\u4e0b\u5b89\u88c5SREWorks",
+                            "type": "doc"
+                        }
+                    ],
+                    "label": "2.2 \u5e38\u89c1\u5b89\u88c5\u6848\u4f8b",
+                    "type": "category"
+                },
+                {
                     "id": "mzz07m",
-                    "label": "2.2 \u5b89\u88c5\u53c2\u6570\u660e\u7ec6",
+                    "label": "2.3 \u5b89\u88c5\u53c2\u6570\u660e\u7ec6",
                     "type": "doc"
                 }
             ],

@@ -1,5 +1,5 @@
 ---
-title: 2.2 安装参数明细
+title: 2.3 安装参数明细
 date: 2022-03-25T03:39:17.000Z
 toc_max_heading_level: 6
 toc_min_heading_level: 2
