@@ -26,7 +26,7 @@ k3d cluster create -p "30000-32767:30000-32767@server[0]"
 <a name="TEsDw"></a>
 
 # SREWorks安装
-使用自带的K3s自带的`storageClass: local-path`作为存储，关闭默认的存储类。
+使用K3s自带的`storageClass: local-path`作为存储，关闭默认存储。
 ```bash
 # 下载sreworks到本地
 git clone http://github.com/alibaba/sreworks.git -b v1.4 sreworks

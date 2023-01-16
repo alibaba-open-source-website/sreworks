@@ -6,3 +6,10 @@ toc_min_heading_level: 2
 ---
 
 
+<a name="TdyWR"></a>
+
+# 什么是minikube
+Minikube 是一种轻量级的Kubernetes 实现，可在本地计算机上创建VM 并部署仅包含一个节点的简单集群。Minikube 可用于Linux ， macOS 和Windows 系统。
+
+
+

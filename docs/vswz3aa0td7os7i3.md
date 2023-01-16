@@ -8,7 +8,7 @@ toc_min_heading_level: 2
 <a name="rleS2"></a>
 
 # 什么是离线安装
-有很多用户的使用环境在内网，无法直接拉取公网的容器镜像。因此SREWorks团队考虑到这个情况，将SREWorks拉起所需的容器镜像进行了收敛整理，方便用户搬运至内网使用。
+由于许多用户的使用环境位于内部网络中，无法直接访问公网上的容器镜像。为了解决这一问题，SREWorks团队对SREWorks的部署机制进行优化，使得其所需容器镜像清单可以自动生成，方便用户快速地将SREWorks移植到内部网络中使用。
 
 <a name="mpsVo"></a>
 
@@ -80,7 +80,7 @@ sreworks-registry.cn-beijing.cr.aliyuncs.com/hub/system-plugin-aliyun-cluster-re
 <a name="wMgJi"></a>
 
 # 内网SREWorks启动
-离线部署的命令示例如下，底层依赖软件和运维应用的镜像仓库需要分开设置：<br />镜像仓库以 `sreworks.io/hub-test` 为例
+离线部署的命令示例如下，底层依赖软件和运维应用的镜像仓库需要分开设置：<br />内网镜像仓库以 `sreworks.io/hub-test` 为例：
 ```shell
 # 下载sreworks到本地
 git clone http://github.com/alibaba/sreworks.git -b v1.4 sreworks
