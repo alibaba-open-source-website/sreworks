@@ -48,10 +48,9 @@ jobs:
           npm install yarn -g
           yarn
           yarn build --locale zh
-          mv ./build /tmp/zh
+          mv ./build /tmp/zh-website
           yarn build
-          rm -rf ./build/zh
-          mv /tmp/zh ./build/
+          mv /tmp/zh-website ./build/
           
       - name: Deploy
         # 将构建产物 commit 到一个分支上，用于发布静态站点资源
