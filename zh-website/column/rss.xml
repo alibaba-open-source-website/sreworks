@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>SREWorks Blog</title>
-        <link>https://sreworks.cn/column</link>
+        <link>https://sreworks.opensource.alibaba.com/column</link>
         <description>SREWorks Blog</description>
         <lastBuildDate>Wed, 24 Aug 2022 07:05:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,7 +10,7 @@
         <language>zh</language>
         <item>
             <title><![CDATA[SREWorks前端低代码工程设计概览]]></title>
-            <link>https://sreworks.cn/column/tpx7u2</link>
+            <link>https://sreworks.opensource.alibaba.com/column/tpx7u2</link>
             <guid>/tpx7u2</guid>
             <pubDate>Wed, 24 Aug 2022 07:05:17 GMT</pubDate>
             <description><![CDATA[引子]]></description>
@@ -19,7 +19,7 @@
         </item>
         <item>
             <title><![CDATA[基于Elasticsearch生长的SREWorks数据化运维体系]]></title>
-            <link>https://sreworks.cn/column/xsn02u</link>
+            <link>https://sreworks.opensource.alibaba.com/column/xsn02u</link>
             <guid>/xsn02u</guid>
             <pubDate>Mon, 22 Aug 2022 23:07:28 GMT</pubDate>
             <description><![CDATA[开源Elasticsearch是一个基于Lucene的实时分布式的搜索与分析引擎，是遵从Apache开源条款的一款开源产品，是当前主流的企业级搜索引擎。作为一款基于RESTful API的分布式服务，Elasticsearch可以快速地、近乎于准实时地存储、查询和分析超大数据集，通常被用来作为构建复杂查询特性和需求强大应用的基础引擎。]]></description>
