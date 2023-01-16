@@ -14,5 +14,8 @@
   },
   "item.label.Blog":{
     "message": "博客"
+  },
+  "item.label.English":{
+    "message": "简体中文"
   }
 }

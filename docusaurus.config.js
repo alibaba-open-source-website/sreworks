@@ -169,7 +169,7 @@ const config = {
           {
             position: 'right',
             type: 'dropdown',
-            label: 'Languages',
+            label: 'English',
             items: [{
                 type: 'html',
                 value: '<a class="dropdown__link" href="https://sreworks.cn/">简体中文</a>',
