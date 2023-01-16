@@ -47,7 +47,7 @@ jobs:
         run: |
           npm install yarn -g
           yarn
-          yarn build:zh --locale zh
+          yarn build --locale zh
           mv ./build /tmp/zh-website
           yarn build
           mv /tmp/zh-website ./build/
