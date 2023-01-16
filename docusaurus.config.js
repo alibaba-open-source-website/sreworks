@@ -11,7 +11,8 @@ const versionConfig = {
 const config = {
   title: 'SREWorks',
   tagline: 'SREWorks 专注于以应用为中心的一站式“云原生”、“数智化”运维SaaS管理套件。提供企业的应用&资源管理及运维开发两大核心能力，帮助企业实现云原生应用&资源的交付运维',
-  url: "https://sreworks.opensource.alibaba.com/",
+  //url: "https://sreworks.opensource.alibaba.com/",
+  url: "/",
   baseUrl: '/',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -161,9 +162,21 @@ const config = {
             dropdownActiveClassDisabled: true,
             activeBaseRegex: 'docs/(next|v8)'
           },
+          //{
+          //  type: 'localeDropdown',
+          //  position: 'right',
+          //},
           {
-            type: 'localeDropdown',
             position: 'right',
+            type: 'dropdown',
+            label: 'Languages',
+            items: [{
+                type: 'html',
+                value: '<a class="dropdown__link" href="https://sreworks.cn/">简体中文</a>',
+            },{
+                type: 'html',
+                value: '<a class="dropdown__link" href="https://sreworks.opensource.alibaba.com/">English</a>',
+            }],
           },
           {
             className: 'header-github-link',
@@ -183,10 +196,10 @@ const config = {
           content: 'SREWorks 专注于以应用为中心的一站式“云原生”、“数智化”运维SaaS管理套件。提供企业的应用&资源管理及运维开发两大核心能力，帮助企业实现云原生应用&资源的交付运维'
         },
       ],
-      announcementBar: {
-        id: 'announcementBar-2',
-        content: '⭐ 开源不易，如果觉得本项目对您的工作还是有帮助的话， 请帮忙在<a target="_blank" rel="noopener noreferrer" href="https://github.com/alibaba/sreworks">GitHub</a> 点个⭐️',
-      },
+      //announcementBar: {
+      //  id: 'announcementBar-2',
+      //  content: '⭐ 开源不易，如果觉得本项目对您的工作还是有帮助的话， 请帮忙在<a target="_blank" rel="noopener noreferrer" href="https://github.com/alibaba/sreworks">GitHub</a> 点个⭐️',
+      //},
       footer: {
         style: 'dark',
         links: [

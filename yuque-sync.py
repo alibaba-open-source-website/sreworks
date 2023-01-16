@@ -69,6 +69,9 @@ def mdx_body(meta, content):
     # ### 核心场景
     # a标签和标题处于上下行时会出现问题，需要中间加一个空行
     content = content.replace("</a>\n#", "</a>\n\n#")
+   
+    # 内部链接替换
+    content = content.replace('(https://www.yuque.com/' + settings["NAMESPACE"], '(.')
 
     # 遍历图片并下载后替换路径
     for r in content.replace('![](', '![image.png](').split(".png]("):
