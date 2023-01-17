@@ -136,20 +136,10 @@ const config = {
             label: 'Blog',
             position: 'right',
           },
-//          {
-//            label: 'Blog',
-//            type: 'doc',
-//            docId: 'index',
-//            position: 'right',
- //           docsPluginId: 'blogs',
-  //      },
         {
             label: 'Column',
             to: 'column',
-            //type: 'blog',
-            //docId: 'index',
             position: 'right',
-            //docsPluginId: 'column',
         },
           {
             label: "Demo",
@@ -162,10 +152,6 @@ const config = {
             dropdownActiveClassDisabled: true,
             activeBaseRegex: 'docs/(next|v8)'
           },
-          //{
-          //  type: 'localeDropdown',
-          //  position: 'right',
-          //},
           {
             position: 'right',
             type: 'dropdown',
@@ -180,7 +166,6 @@ const config = {
           },
           {
             className: 'header-github-link',
-            // html: "<div class='navbar__item github-link-logo'><a href='https://github.com/alibaba/sreworks'></a></div>",
             position: 'right',
             href: 'https://github.com/alibaba/sreworks',
           },
