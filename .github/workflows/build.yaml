@@ -51,6 +51,7 @@ jobs:
           mv ./build /tmp/zh-website
           yarn build
           mv /tmp/zh-website ./build/
+          sed -i 's/sreworks\.opensource\.alibaba\.com/sreworks\.cn/g' ./build/zh-website/sitemap.xml
           
       - name: Deploy
         # 将构建产物 commit 到一个分支上，用于发布静态站点资源
