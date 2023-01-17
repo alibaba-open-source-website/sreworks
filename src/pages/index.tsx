@@ -160,7 +160,7 @@ export default function Home(): JSX.Element {
               </div>
             </div>
             <div>
-              <img style={{ height: 300, marginTop: 40, marginLeft: 100 }} src="https://sreworks.oss-cn-beijing.aliyuncs.com/svg/dataops-aiops.svg" />
+              <img style={{ height: 350, marginTop: 40, marginLeft: 100 }} src="https://sreworks.oss-cn-beijing.aliyuncs.com/svg/dataops-aiops.svg" />
             </div>
           </section>
           <section className="main-body-three">
@@ -202,7 +202,7 @@ export default function Home(): JSX.Element {
               </div>
             </div>
             <div>
-              <img style={{ height: 500, marginTop: -50 }} src="https://sreworks.oss-cn-beijing.aliyuncs.com/svg/lowcode-active2.svg" />
+              <img style={{ height: 350, marginLeft: 50 }} src="https://sreworks.oss-cn-beijing.aliyuncs.com/svg/lowcode-active2.svg" />
             </div>
           </section>
         </div>
