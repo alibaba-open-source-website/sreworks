@@ -13,7 +13,7 @@ K3s 是一款由Rancher Labs发布轻量级的 Kubernetes 发行版，它针对�
 <a name="nUnHA"></a>
 
 # K3s部署
-鉴于在笔记本上环境存在一定差异，推荐使用 来运行。<br />在MAC下执行k3d的安装命令即可快速开始使用
+鉴于在笔记本上环境存在一定差异，推荐使用[GitHub - k3d-io/k3d: Little helper to run CNCF’s k3s in Docker](https://github.com/k3d-io/k3d) 来运行。<br />在MAC下执行k3d的安装命令即可快速开始使用
 ```bash
 brew install k3d
 ```
