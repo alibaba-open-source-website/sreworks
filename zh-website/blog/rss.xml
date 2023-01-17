@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>SREWorks Blog</title>
-        <link>https://sreworks.opensource.alibaba.com/blog</link>
+        <link>https://sreworks.cn/blog</link>
         <description>SREWorks Blog</description>
         <lastBuildDate>Mon, 16 Jan 2023 20:41:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,7 +10,7 @@
         <language>zh</language>
         <item>
             <title><![CDATA[SREWorks v1.4 版本发布 | 离线安装&前端重构]]></title>
-            <link>https://sreworks.opensource.alibaba.com/blog/zuc6iq93eesusy5r</link>
+            <link>https://sreworks.cn/blog/zuc6iq93eesusy5r</link>
             <guid>/zuc6iq93eesusy5r</guid>
             <pubDate>Mon, 16 Jan 2023 20:41:23 GMT</pubDate>
             <description><![CDATA[在v1.3版本之后，SREWorks团队收集了较多的用户反馈，大家普遍对于SREWorks的内网离线安装有较大的诉求。于是团队决定进一步增强这部分的安装能力。前端工程部分(frontend)，为了团队更加敏捷高效的协作开发，及便于社区开发者参与共建sreworks前端组件生态，对工程架构重新梳理拆分，进行了Monorepo模式架构演进; 同时对工程构建工具及配置进行了优化升级。下面为v1.4的版本功能版本介绍：]]></description>
@@ -18,7 +18,7 @@
         </item>
         <item>
             <title><![CDATA[SREWorks v1.3 版本发布 | 插件机制发布]]></title>
-            <link>https://sreworks.opensource.alibaba.com/blog/ef445rystzi023ae</link>
+            <link>https://sreworks.cn/blog/ef445rystzi023ae</link>
             <guid>/ef445rystzi023ae</guid>
             <pubDate>Mon, 16 Jan 2023 20:38:54 GMT</pubDate>
             <description><![CDATA[在v1.2版本发布之后，SREWorks团队着手开始了v1.3版本的迭代。此次v1.3版本融合了较多用户需求，以及对底座机制进行了较大调整和优化，故发版时间长了很多。下面让我们切入正题，来看看这些大变化究竟是哪些？]]></description>
@@ -26,7 +26,7 @@
         </item>
         <item>
             <title><![CDATA[基于k8s的云原生数智运维平台SREWorks正式开源]]></title>
-            <link>https://sreworks.opensource.alibaba.com/blog/ztea5p</link>
+            <link>https://sreworks.cn/blog/ztea5p</link>
             <guid>/ztea5p</guid>
             <pubDate>Wed, 24 Aug 2022 06:18:33 GMT</pubDate>
             <description><![CDATA[随着行业不断发展，大数据&AI也逐渐呈现云原生化的趋势，在阿里，所有商业化场景使用的大数据 & AI 系统产品都是统一由阿里云计算平台建设和交付维护。复杂的业务场景及其背后涉及到的不同技术方向的开源和自研，使得产品运维面临技术复杂度高、规模大、场景多等挑战。]]></description>
@@ -34,7 +34,7 @@
         </item>
         <item>
             <title><![CDATA[SREWorks v1.2 版本发布 | 运维市场能力发布]]></title>
-            <link>https://sreworks.opensource.alibaba.com/blog/dfg57x</link>
+            <link>https://sreworks.cn/blog/dfg57x</link>
             <guid>/dfg57x</guid>
             <pubDate>Mon, 22 Aug 2022 23:16:37 GMT</pubDate>
             <description><![CDATA[在v1.1版本发布之后，SREWorks团队开始了常态化的功能版本迭代，v1.1提供了组件插拔能力，v1.2更进一步，将会发布规划已久的运维市场，助力团队构筑运维生态，也会发布诸多企业用户关注的纯内网源码构建方案。]]></description>
@@ -42,7 +42,7 @@
         </item>
         <item>
             <title><![CDATA[SREWorks v1.1 版本发布 | 组件插拔场景化部署能力]]></title>
-            <link>https://sreworks.opensource.alibaba.com/blog/yot1g3</link>
+            <link>https://sreworks.cn/blog/yot1g3</link>
             <guid>/yot1g3</guid>
             <pubDate>Mon, 22 Aug 2022 23:07:05 GMT</pubDate>
             <description><![CDATA[自SREWorks v1.0 版本在3月份开源以来，通过钉钉群、微信群、GitHub等渠道，团队陆续收到了各种反馈。随即团队开始了v1.1版本的功能优化迭代，优先解决用户反馈上来的TOP3问题: 组件插拔、最小资源部署、存储类使用，同时针对用户使用过程中暴露出来的小问题也做了相应的优化。]]></description>
