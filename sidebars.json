@@ -30,7 +30,7 @@
                     "type": "doc"
                 }
             ],
-            "label": "1 \u5feb\u901f\u5f00\u59cb",
+            "label": "1 \u57fa\u7840\u77e5\u8bc6",
             "type": "category"
         },
         {
@@ -77,9 +77,14 @@
                     "id": "mzz07m",
                     "label": "2.4 \u5b89\u88c5\u53c2\u6570\u660e\u7ec6",
                     "type": "doc"
+                },
+                {
+                    "id": "iwa896",
+                    "label": "2.5 \u5e38\u89c1\u90e8\u7f72\u95ee\u9898",
+                    "type": "doc"
                 }
             ],
-            "label": "2 \u5b89\u88c5SREWorks",
+            "label": "2 \u5b89\u88c5\u914d\u7f6e",
             "type": "category"
         },
         {
@@ -96,7 +101,7 @@
                     "type": "doc"
                 },
                 {
-                    "id": "cirgod",
+                    "id": "mtigftxg5ypcq60b",
                     "label": "3.3 \u6570\u667a\u8fd0\u7ef4",
                     "type": "doc"
                 }
@@ -151,13 +156,18 @@
                             "id": "ou9k9g",
                             "label": "4.2.3 \u8fd0\u7ef4\u524d\u7aef\u5f00\u53d1",
                             "type": "doc"
+                        },
+                        {
+                            "id": "cirgod",
+                            "label": "4.2.4 \u6570\u667a\u8fd0\u7ef4\u7ba1\u7406",
+                            "type": "doc"
                         }
                     ],
-                    "label": "4.2 \u8fd0\u7ef4\u5f00\u53d1",
+                    "label": "4.2 \u8fd0\u7ef4\u5e94\u7528",
                     "type": "category"
                 }
             ],
-            "label": "4 \u4f7f\u7528SREWorks",
+            "label": "4 \u5e73\u53f0\u4f7f\u7528\u6307\u5357",
             "type": "category"
         },
         {
@@ -172,7 +182,7 @@
                             "type": "doc"
                         }
                     ],
-                    "label": "5.1 \u63d2\u4ef6\u5f00\u53d1",
+                    "label": "5.1 \u63d2\u4ef6\u6269\u5c55",
                     "type": "category"
                 },
                 {
@@ -189,7 +199,7 @@
                             "type": "doc"
                         }
                     ],
-                    "label": "5.2 \u524d\u7aef\u5f00\u53d1",
+                    "label": "5.2 \u524d\u7aef\u6269\u5c55",
                     "type": "category"
                 },
                 {
@@ -266,7 +276,7 @@
                     "type": "category"
                 }
             ],
-            "label": "5. \u5f00\u53d1\u8005\u6307\u5357",
+            "label": "5 \u5e73\u53f0\u5f00\u53d1\u6307\u5357",
             "type": "category"
         },
         {
@@ -278,24 +288,19 @@
                     "type": "doc"
                 }
             ],
-            "label": "6. \u6700\u4f73\u573a\u666f\u5b9e\u8df5",
+            "label": "6 \u6700\u4f73\u573a\u666f\u5b9e\u8df5",
             "type": "category"
         },
         {
             "collapsed": true,
             "items": [
                 {
-                    "id": "iwa896",
-                    "label": "7.1 \u5e38\u89c1\u90e8\u7f72\u95ee\u9898",
-                    "type": "doc"
-                },
-                {
                     "id": "xnk5d9d8m3ck5gtp",
-                    "label": "7.2 \u5e38\u89c1\u4f7f\u7528\u95ee\u9898",
+                    "label": "7.1 \u5e38\u89c1\u4f7f\u7528\u95ee\u9898",
                     "type": "doc"
                 }
             ],
-            "label": "7.\u5e38\u89c1\u95ee\u9898",
+            "label": "7 \u5e38\u89c1\u95ee\u9898",
             "type": "category"
         }
     ]
