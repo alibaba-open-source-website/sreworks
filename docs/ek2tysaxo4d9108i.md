@@ -27,7 +27,7 @@ toc_min_heading_level: 2
 
 ### 拉取源码
 ```shell
-git clone http://github.com/alibaba/sreworks.git -b v1.3 sreworks
+git clone http://github.com/alibaba/sreworks.git -b v1.4 sreworks
 cd sreworks
 SW_ROOT=$(pwd)
 ```
@@ -39,7 +39,7 @@ SW_ROOT=$(pwd)
 ├── build.sh                            /* 底座构建脚本 */                                 
 ├── paas                                /* 底座源码(PaaS) */
 │   ├── appmanager/                     /* 核心应用引擎 appmanager */
-│   ├── sw-frontend/                    /* 前端低代码框架 */
+│   ├── frontend/                    /* 前端低代码框架 */
 │   └── ...                         
 ├── saas                                /* 运维应用源码(SaaS) */
 │   ├── app/                            /* 企业应用管理 */
@@ -63,24 +63,11 @@ SW_ROOT=$(pwd)
 <a name="GyQ6u"></a>
 
 ### 本地镜像构建
-在sreworks目录下，直接在本地执行构建脚本
+在sreworks目录下，可以在本地执行构建脚本。<br />执行之前请确认 [底座构建依赖](#NQ8Vf) 提及的资源均可访问，如不能直接访问，请替换成可访问的资源。
 ```shell
-./build.sh --target all --build --tag v1.3
+./build.sh --target all --build --tag v1.4
 ```
-附: 构建镜像清单，如果镜像无法构建成功，也可以直接去公网搬运，镜像内容是完全一致的。
-```yaml
-sreworks-registry.cn-beijing.cr.aliyuncs.com/sreworks/sw-migrate:v1.3
-sreworks-registry.cn-beijing.cr.aliyuncs.com/sreworks/sw-openjdk8-jre:v1.3
-sreworks-registry.cn-beijing.cr.aliyuncs.com/sreworks/sw-postrun:v1.3
-sreworks-registry.cn-beijing.cr.aliyuncs.com/sreworks/sw-progress-check:v1.3
-sreworks-registry.cn-beijing.cr.aliyuncs.com/sreworks/sw-paas-appmanager:v1.3
-sreworks-registry.cn-beijing.cr.aliyuncs.com/sreworks/sw-paas-appmanager-db-migration:v1.3
-sreworks-registry.cn-beijing.cr.aliyuncs.com/sreworks/sw-paas-appmanager-postrun:v1.3
-sreworks-registry.cn-beijing.cr.aliyuncs.com/sreworks/sw-paas-appmanager-cluster-init:v1.3
-sreworks-registry.cn-beijing.cr.aliyuncs.com/sreworks/sw-paas-appmanager-operator:v1.3
-sreworks-registry.cn-beijing.cr.aliyuncs.com/sreworks/swcli:v1.3
-sreworks-registry.cn-beijing.cr.aliyuncs.com/sreworks/swcli-builtin-package:v1.3
-```
+_如果镜像无法构建成功，可以直接去公网搬运镜像跳过这个环节，镜像内容是完全一致的。_<br />_镜像清单请看参考 _[_https://github.com/alibaba/SREWorks/blob/master/images.txt_](https://github.com/alibaba/SREWorks/blob/master/images.txt)_ 其中tag名为v1.4均为底座镜像。_
 
 <a name="HYQrQ"></a>
 
@@ -89,15 +76,14 @@ sreworks-registry.cn-beijing.cr.aliyuncs.com/sreworks/swcli-builtin-package:v1.3
 ```shell
 SW_REPO="your-registry.***.com/sreworks"
 docker login --username=sre****s your-registry.***.com
-./build.sh --target all --push $SW_REPO --tag v1.3
+./build.sh --target all --push $SW_REPO --tag v1.4
 ```
 
 
 <a name="S66K2"></a>
 
 ## 运维应用(SaaS)源码构建
-
- 步骤与快速安装大致相同，替换helm install参数， 触发运维应用来自源码的容器镜像构建，注意按照附录1和附录2替换参数。
+步骤与快速安装大致相同，替换helm install参数， 触发运维应用来自源码的容器镜像构建。其原理是拉起git仓库的源码，通过云原生化的kankio构建方案构建容器镜像。<br />执行前注意确认 [运维应用构建依赖](#V9FYX) 和 [运维应用运行依赖](#o5vp7) 提及的资源均可访问，如不能直接访问，请替换成可访问的资源。
 ```shell
 
 # appmanager.server.docker.* 参数为SaaS应用构建制品镜像仓库配置
@@ -108,13 +94,13 @@ helm install sreworks $SW_ROOT/chart/sreworks-chart \
     --create-namespace --namespace sreworks \
     --set appmanager.home.url="https://your-website.***.com" \
     --set build.enable=true \
-    --set global.images.tag="v1.2" \
+    --set global.images.tag="v1.4" \
     --set global.images.registry=$SW_REPO \
     --set appmanager.server.docker.account="sreworks" \
     --set appmanager.server.docker.password="***" \
     --set appmanager.server.docker.registry="registry.cn-zhangjiakou.aliyuncs.com" \
     --set appmanager.server.docker.namespace="builds" \
-    --set source.branch="v1.3" \
+    --set source.branch="v1.4" \
     --set source.repo="https://code.aliyun.com/sreworks_public/mirror.git"
 
 ```
@@ -124,7 +110,7 @@ helm install sreworks $SW_ROOT/chart/sreworks-chart \
 ## 构建参数明细
 <a name="NQ8Vf"></a>
 
-### 底座构建依赖资源参数
+### 底座构建依赖
 在执行 `./build.sh` 命令前可传入下列的环境变量来改变资源地址，如不传入则使用默认值。
 ```bash
 # 容器镜像
@@ -152,7 +138,7 @@ export SREWORKS_BUILTIN_PACKAGE_URL="https://sreworks.oss-cn-beijing.aliyuncs.co
 
 <a name="V9FYX"></a>
 
-### 运维应用构建依赖资源参数
+### 运维应用构建依赖
 在执行helm install/upgrade 命令的时候，可以选择性传入以下参数，使得运维应用可以在内网进行构建及部署。
 ```bash
 # 容器镜像
@@ -175,7 +161,14 @@ export SREWORKS_BUILTIN_PACKAGE_URL="https://sreworks.oss-cn-beijing.aliyuncs.co
 
 # 二进制命令
 --set global.artifacts.minioClientUrl="https://sreworks.oss-cn-beijing.aliyuncs.com/bin/mc-linux-amd64" \
+```
 
+
+<a name="o5vp7"></a>
+
+### 运维应用运行依赖
+除了构建依赖的源以外，还有很多开源软件，请确保其镜像可访问
+```shell
 # SaaS应用Helm包中依赖的镜像
 --set global.artifacts.logstashImage="sreworks-registry.cn-beijing.cr.aliyuncs.com/mirror/logstash:7.10.2" \
 --set global.artifacts.grafanaImage="sreworks-registry.cn-beijing.cr.aliyuncs.com/mirror/grafana:7.5.3" \
@@ -202,28 +195,7 @@ export SREWORKS_BUILTIN_PACKAGE_URL="https://sreworks.oss-cn-beijing.aliyuncs.co
 --set appmanagerbase.redis.image.registry="sreworks-registry.cn-beijing.cr.aliyuncs.com" \
 --set appmanagerbase.redis.image.repository="mirror/redis" \
 --set appmanagerbase.redis.image.tag="v1.0" \
---set appmanagerbase.openebs.apiserver.image="openebs/m-apiserver" \
---set appmanagerbase.openebs.apiserver.imageTag="2.12.2" \
---set appmanagerbase.openebs.provisioner.image="openebs/openebs-k8s-provisioner" \
---set appmanagerbase.openebs.provisioner.imageTag="2.12.2" \
---set appmanagerbase.openebs.localprovisioner.image="openebs/provisioner-localpv" \
---set appmanagerbase.openebs.localprovisioner.imageTag="2.12.2" \
---set appmanagerbase.openebs.snapshotOperator.controller.image="openebs/snapshot-controller" \
---set appmanagerbase.openebs.snapshotOperator.controller.imageTag="2.12.2" \
---set appmanagerbase.openebs.snapshotOperator.provisioner.image="openebs/snapshot-provisioner" \
---set appmanagerbase.openebs.snapshotOperator.provisioner.imageTag="2.12.2" \
---set appmanagerbase.openebs.ndm.image="openebs/node-disk-manager" \
---set appmanagerbase.openebs.ndm.imageTag="1.8.0" \
---set appmanagerbase.openebs.ndmOperator.image="openebs/node-disk-operator" \
---set appmanagerbase.openebs.ndmOperator.imageTag="1.8.0" \
---set appmanagerbase.openebs.webhook.image="openebs/admission-server" \
---set appmanagerbase.openebs.webhook.imageTag="2.12.2" \
---set appmanagerbase.openebs.helper.image="openebs/linux-utils" \
---set appmanagerbase.openebs.helper.imageTag="3.1.0" \
---set appmanagerbase.openebs.policies.monitoring.image="openebs/m-exporter" \
---set appmanagerbase.openebs.policies.monitoring.imageTag="2.12.2" \
 ```
-
 其中flink部分需要按照`global.artifacts.vvpRegistry`的前缀上传如下镜像，建议优先使用flink1.14版本， flink1.12和flink1.13版本根据实际需要提供
 ```bash
 sreworks-registry.cn-beijing.cr.aliyuncs.com/mirror/flink:1.12.7-stream1-scala_2.12-java8
@@ -234,3 +206,4 @@ sreworks-registry.cn-beijing.cr.aliyuncs.com/mirror/flink:1.14.2-stream1-scala_2
 sreworks-registry.cn-beijing.cr.aliyuncs.com/mirror/flink:1.14.2-stream1-scala_2.12-java11
 sreworks-registry.cn-beijing.cr.aliyuncs.com/mirror/vvp-result-fetcher-service:2.6.1
 ```
+
