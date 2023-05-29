@@ -35,7 +35,7 @@ toc_min_heading_level: 2
 <a name="mwcb0"></a>
 
 ### 本地运行
-前端(sw-frontend)代码目录 [https://github.com/alibaba/SREWorks/tree/master/paas/sw-frontend](https://github.com/alibaba/SREWorks/tree/master/paas/sw-frontend)
+前端(frontend)代码目录 [https://github.com/alibaba/SREWorks/tree/master/paas/frontend](https://github.com/alibaba/SREWorks/tree/master/paas/frontend)
 <a name="w58Sg"></a>
 
 #### 安装依赖
