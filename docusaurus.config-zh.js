@@ -54,12 +54,10 @@ const config = {
           versions: {}
         },
         blog: {
-           postsPerPage: 3,
-           //showReadingTime: true,
+           postsPerPage: 1,
+           blogSidebarTitle: 'All posts',
+           blogSidebarCount: 'ALL',
         },
-        //column: {
-        //   postsPerPage: 3,
-        //},
         theme: {
           customCss: require.resolve('./src/css/sreworks.scss'),
         },
@@ -107,6 +105,9 @@ const config = {
             id: 'column',
             path: 'column',
             routeBasePath: 'column',
+            blogSidebarTitle: 'All posts',
+            blogSidebarCount: 'ALL',
+            postsPerPage: 1, 
             //sidebarPath: require.resolve('./sidebars-column.json'),
         },
     ],
