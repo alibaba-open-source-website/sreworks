@@ -14,7 +14,7 @@ toc_min_heading_level: 2
 ## 1. 应用市场
 SREWorks团队参考helm/rpm等常见软件仓库模型，设计了SREWorks的市场分发机制如下图所示:
 
-![](./pictures/1655376291778-6df6b01c-32f4-460d-a5d7-83e46ffadf15.jpeg.png)
+![](./pictures/1655376291778-6df6b01c-32f4-460d-a5d7-83e46ffadf15.jpeg)
 
 该市场分发机制具有如下特点:
 

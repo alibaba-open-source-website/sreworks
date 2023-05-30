@@ -15,7 +15,7 @@ Monorepo即单仓(repository)多包(package)，大型前端工程项目采用这
 - 更细粒度的独立构建单元便于协作开发和不同更新频率的子包单独发版
 - 更加高效的代码复用等
 
-我们在v1.4版本中采用lerna + yarn workspace 的技术方案进行了Monorepo的架构实践：将原工程拆分为@sreworks/app主包应用，和@sreworks/components、@sreworks/widgets、@sreworks/framework、@sreworks/shared-utils四个npm子依赖包。目录结构变动如下图所示：<br />![](./pictures/1672728334513-1df917ac-4749-4bca-b267-d52bffaaee64.jpeg.png)
+我们在v1.4版本中采用lerna + yarn workspace 的技术方案进行了Monorepo的架构实践：将原工程拆分为@sreworks/app主包应用，和@sreworks/components、@sreworks/widgets、@sreworks/framework、@sreworks/shared-utils四个npm子依赖包。目录结构变动如下图所示：<br />![](./pictures/1672728334513-1df917ac-4749-4bca-b267-d52bffaaee64.jpeg)
 
 工程重构过程中，我们对原有构建工具也进行了优化升级：
 
