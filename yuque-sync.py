@@ -5,6 +5,7 @@ import ssl
 import json
 import os
 import argparse
+import re
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -45,8 +46,19 @@ def yuque(uri):
         "User-Agent": settings["USER_AGENT"],
         "X-Auth-Token": settings["TOKEN"],
     }
+    print("request yueque api: %s" % settings["ENDPOINT"] + uri)
     res = urllib.urlopen(request.Request(url=settings["ENDPOINT"] + uri, headers=headers)).read()
     return json.loads(res).get("data")
+
+def replace_with_relative_path(match):
+    description = match.group(1) 
+    url = match.group(2)
+    filename = url.split("/")[-1].split("#")[0]
+
+    command = "wget '%s' -O %s/pictures/%s" % (url.split("#")[0], settings["LOCAL_PATH"], filename)
+    os.popen(command)
+
+    return f'![{description}](./pictures/{filename})'
 
 def mdx_body(meta, content):
     meta_content = "---\n"
@@ -73,14 +85,17 @@ def mdx_body(meta, content):
     # 内部链接替换
     content = content.replace('(https://www.yuque.com/' + settings["NAMESPACE"], '(.')
 
-    # 遍历图片并下载后替换路径
-    for r in content.replace('![](', '![image.png](').split(".png]("):
-        if not r.startswith("http"): continue
-        pic = r.split(")")[0]
-        pic_name = pic.split(".png#")[0].split("/")[-1] + ".png"
-        command = "wget '%s' -O %s/pictures/%s" % (pic, settings["LOCAL_PATH"], pic_name)
-        os.popen(command)
-        content = content.replace(pic, "./pictures/" + pic_name)
+    ## 遍历图片并下载后替换路径
+    #for r in content.replace('![](', '![image.png](').split(".png]("):
+    #    if not r.startswith("http"): continue
+    #    pic = r.split(")")[0]
+    #    pic_name = pic.split(".png#")[0].split("/")[-1] + ".png"
+    #    command = "wget '%s' -O %s/pictures/%s" % (pic, settings["LOCAL_PATH"], pic_name)
+    #    os.popen(command)
+    #    content = content.replace(pic, "./pictures/" + pic_name)
+
+    pattern = r'!\[(.*?)\]\((.*?)\)'
+    content = re.sub(pattern, replace_with_relative_path, content)
 
     return meta_content + content
 
