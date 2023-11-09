@@ -25,7 +25,7 @@ _如果minikube安装过程中网络问题中断，可能会出现脏数据，�
 # SREWorks安装
 ```bash
 # 下载sreworks到本地
-git clone http://github.com/alibaba/sreworks.git -b v1.4 sreworks
+git clone http://github.com/alibaba/sreworks.git -b v1.5 sreworks
 cd sreworks/chart/sreworks-chart
 
 # 安装SREWorks

@@ -18,43 +18,50 @@ toc_min_heading_level: 2
 ### 环境要求
 
 - Node = 14  如果本机版本不满足要求，可以使用 [nvm](https://github.com/nvm-sh/nvm) 来做node多版本切换
-- 本地未设置前端代理：关闭浏览器跨域安全策略，Chrome <= 93 。[其他版本Chrome下载地址](https://google-chrome.en.uptodown.com/mac/versions)
-
-本地工程设置前端代理：<br />修改webpackDevServer.config.js
-```
-    proxy: {
-      "/gateway": {
-        target: "targetUrl",
-        changeOrigin: true,
-        cookieDomainRewrite:"localhost"
-      }
-    },
-```
-可根据本地服务部署环境进行选择
 
 <a name="mwcb0"></a>
 
-### 本地运行
+### 本地调试
 前端(frontend)代码目录 [https://github.com/alibaba/SREWorks/tree/master/paas/frontend](https://github.com/alibaba/SREWorks/tree/master/paas/frontend)
-<a name="w58Sg"></a>
-
-#### 安装依赖
-```
-npm config set registry https://registry.npm.taobao.org
-cnpm install 
-```
 
 <a name="RuDgz"></a>
 
-#### 本地启动
+#### 本地构建
 ```shell
-npm run pre  # 仅首次需要执行
-npm start
+npm install --global yarn
+yarn install
+yarn build:all # 构建所有的组件(第一次需要构建)
+```
+
+<a name="wm7FI"></a>
+
+#### 配置参数
+修改 [app/config/webpack.config.js](https://github.com/alibaba/SREWorks/blob/master/paas/frontend/app/config/webpack.config.js#L44) 中的代理指向可访问sreworks endpoint，本文以 [http://8.130.35.2:30767/](http://8.130.35.2:30767/) 为例
+```json
+
+module.exports = {
+  ...
+  devServer: {
+    ...
+    proxy: {
+        "/gateway": {
+           target: "http://8.130.35.2:30767/",
+           changeOrigin: true,
+           cookieDomainRewrite:"http://8.130.35.2:30767/"
+       }
+    }
+  }
+}
+```
+
+<a name="mS8tr"></a>
+
+#### 本地启动
+请务必进入 [/frontend](https://github.com/alibaba/SREWorks/tree/master/paas/frontend) 所在目录启动
+```shell
+yarn start # 启动 (后续只需要用此命令即可)
 ```
 
 <a name="jwOAZ"></a>
 
-#### 启动浏览器（没有设置前端代理时）
-```shell
-open -a "Google Chrome" --args --disable-web-security --disable-features=SameSiteByDefaultCookies,CookiesWithoutSameSiteMustBeSecure --user-data-dir="/Users/xxxx/tempData/chrome"
-```
+#### 

@@ -30,7 +30,7 @@ curl -sfL https://get-kk.kubesphere.io | VERSION=v2.0.0 sh -
 使用kk方案自带的`storageClass: local`作为存储，关闭默认存储。
 ```bash
 # 下载sreworks到本地
-git clone http://github.com/alibaba/sreworks.git -b v1.4 sreworks
+git clone http://github.com/alibaba/sreworks.git -b v1.5 sreworks
 cd sreworks/chart/sreworks-chart
 
 # 安装SREWorks
