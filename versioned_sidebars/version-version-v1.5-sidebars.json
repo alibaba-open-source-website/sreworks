@@ -1,0 +1,352 @@
+{
+  "sidebars": [
+    "index",
+    {
+      "collapsed": true,
+      "items": [
+        {
+          "id": "fx909t",
+          "label": "1.1 简介",
+          "type": "doc"
+        },
+        {
+          "id": "lz3fpq",
+          "label": "1.2 核心概念",
+          "type": "doc"
+        },
+        {
+          "id": "xq9sk7",
+          "label": "1.3 名词释义",
+          "type": "doc"
+        },
+        {
+          "id": "tcpxav",
+          "label": "1.4 功能列表",
+          "type": "doc"
+        },
+        {
+          "id": "ogxnmx",
+          "label": "1.5 版本记录",
+          "type": "doc"
+        },
+        {
+          "id": "xnk5d9d8m3ck5gtp",
+          "label": "1.6 常见问题FAQ",
+          "type": "doc"
+        }
+      ],
+      "label": "1 基础知识",
+      "type": "category"
+    },
+    {
+      "collapsed": true,
+      "items": [
+        {
+          "id": "rr5g10",
+          "label": "2.1 快速安装",
+          "type": "doc"
+        },
+        {
+          "id": "vswz3aa0td7os7i3",
+          "label": "2.2 离线安装",
+          "type": "doc"
+        },
+        {
+          "collapsed": true,
+          "items": [
+            {
+              "id": "vnlbio04odgkllih",
+              "label": "2.3.1 在minikube下安装SREWorks",
+              "type": "doc"
+            },
+            {
+              "id": "hwchqke3tibvlg7t",
+              "label": "2.3.2 在K3s下安装SREWorks",
+              "type": "doc"
+            },
+            {
+              "id": "xozhprslhue7ue5l",
+              "label": "2.3.3 在KubeSphere All in One下安装SREWorks",
+              "type": "doc"
+            },
+            {
+              "id": "bcetnc8bm9bv9gak",
+              "label": "2.3.4 在Docker Desktop下安装SREWorks",
+              "type": "doc"
+            }
+          ],
+          "label": "2.3 常见安装案例",
+          "type": "category"
+        },
+        {
+          "id": "mzz07m",
+          "label": "2.4 安装参数明细",
+          "type": "doc"
+        },
+        {
+          "id": "iwa896",
+          "label": "2.5 常见部署问题FAQ",
+          "type": "doc"
+        }
+      ],
+      "label": "2 安装配置",
+      "type": "category"
+    },
+    {
+      "collapsed": true,
+      "items": [
+        {
+          "id": "eg91va",
+          "label": "3.1 核心思想",
+          "type": "doc"
+        },
+        {
+          "id": "grtf3q",
+          "label": "3.2 技术架构",
+          "type": "doc"
+        },
+        {
+          "id": "mtigftxg5ypcq60b",
+          "label": "3.3 数智运维",
+          "type": "doc"
+        }
+      ],
+      "label": "3 架构思想",
+      "type": "category"
+    },
+    {
+      "collapsed": true,
+      "items": [
+        {
+          "collapsed": true,
+          "items": [
+            {
+              "id": "ynueoi",
+              "label": "4.1.1 什么是企业应用",
+              "type": "doc"
+            },
+            {
+              "id": "pdqddr",
+              "label": "4.1.2 企业组织管理",
+              "type": "doc"
+            },
+            {
+              "id": "moptgx",
+              "label": "4.1.3 企业资源管理",
+              "type": "doc"
+            },
+            {
+              "id": "ii05yo",
+              "label": "4.1.4 企业应用管理",
+              "type": "doc"
+            }
+          ],
+          "label": "4.1 企业应用",
+          "type": "category"
+        },
+        {
+          "collapsed": true,
+          "items": [
+            {
+              "id": "uopmre",
+              "label": "4.2.1 什么是运维应用",
+              "type": "doc"
+            },
+            {
+              "id": "ap1wm6",
+              "label": "4.2.2 运维应用管理",
+              "type": "doc"
+            },
+            {
+              "id": "fw3e585i3m32k6av",
+              "label": "4.2.3 运维前端开发",
+              "type": "doc"
+            },
+            {
+              "id": "cirgod",
+              "label": "4.2.4 数智运维管理",
+              "type": "doc"
+            }
+          ],
+          "label": "4.2 运维应用",
+          "type": "category"
+        }
+      ],
+      "label": "4 平台使用指南",
+      "type": "category"
+    },
+    {
+      "collapsed": true,
+      "items": [
+        {
+          "collapsed": true,
+          "items": [
+            {
+              "id": "ulnx34gs02gf6ybf",
+              "label": "5.1.1 架构介绍",
+              "type": "doc"
+            },
+            {
+              "id": "irih8g1v4df3gtb7",
+              "label": "5.1.2 二次开发说明及规范",
+              "type": "doc"
+            },
+            {
+              "id": "ek2tysaxo4d9108i",
+              "label": "5.1.3 底座源码构建",
+              "type": "doc"
+            }
+          ],
+          "label": "5.1 架构扩展",
+          "type": "category"
+        },
+        {
+          "collapsed": true,
+          "items": [
+            {
+              "id": "hsavh31ezysent7g",
+              "label": "5.2.1 前端扩展机制介绍",
+              "type": "doc"
+            },
+            {
+              "id": "ngx61f",
+              "label": "5.2.2 轻量级前端组件",
+              "type": "doc"
+            },
+            {
+              "id": "sfh65n",
+              "label": "5.2.3 前端组件开发指南",
+              "type": "doc"
+            }
+          ],
+          "label": "5.2 前端扩展",
+          "type": "category"
+        },
+        {
+          "collapsed": true,
+          "items": [
+            {
+              "id": "acdfhcs2c1q545fv",
+              "label": "5.3.1 数智算法平台介绍",
+              "type": "doc"
+            },
+            {
+              "id": "luggi9ul29277cy6",
+              "label": "5.3.1 算法服务开发",
+              "type": "doc"
+            }
+          ],
+          "label": "5.3 算法扩展",
+          "type": "category"
+        },
+        {
+          "collapsed": true,
+          "items": [
+            {
+              "id": "zn4oqgdqnpaf5ztz",
+              "label": "5.4.1 插件机制总览",
+              "type": "doc"
+            },
+            {
+              "id": "tff8gypgof0xv9r9",
+              "label": "5.4.2 组件类型插件",
+              "type": "doc"
+            },
+            {
+              "id": "ld226wb9gos9pzxr",
+              "label": "5.4.3 运维特征插件",
+              "type": "doc"
+            },
+            {
+              "id": "yb3rzebcxa6ei9y1",
+              "label": "5.4.4 工作流插件",
+              "type": "doc"
+            }
+          ],
+          "label": "5.4 应用插件",
+          "type": "category"
+        },
+        {
+          "collapsed": true,
+          "items": [
+            {
+              "id": "ytk76m9ndx0y04bk",
+              "label": "5.5.1 OpenAPI使用介绍",
+              "type": "doc"
+            },
+            {
+              "id": "mpd7bcqty3dq6of8",
+              "label": "5.5.2 应用管理接口",
+              "type": "doc"
+            }
+          ],
+          "label": "5.5 OpenAPI",
+          "type": "category"
+        },
+        {
+          "collapsed": true,
+          "items": [
+            {
+              "id": "wsxgx1r2gs54nw2x",
+              "label": "5.6.1 工具站点集成",
+              "type": "doc"
+            },
+            {
+              "id": "pxd52gvbndyvvcno",
+              "label": "5.6.2 代码源集成",
+              "type": "doc"
+            },
+            {
+              "id": "nk796gr0nwvgyt8g",
+              "label": "5.6.3 账号集成",
+              "type": "doc"
+            },
+            {
+              "id": "yg33lfa6p0631cfo",
+              "label": "5.6.4 登录集成",
+              "type": "doc"
+            }
+          ],
+          "label": "5.6 系统集成",
+          "type": "category"
+        },
+        {
+          "collapsed": true,
+          "items": [
+            {
+              "id": "yc64sk",
+              "label": "5.3.1 参与SREWorks开源",
+              "type": "doc"
+            },
+            {
+              "id": "rxgxgz",
+              "label": "5.3.2 代码贡献指南",
+              "type": "doc"
+            }
+          ],
+          "label": "5.7 参与开源贡献",
+          "type": "category"
+        }
+      ],
+      "label": "5 平台二次开发指南",
+      "type": "category"
+    },
+    {
+      "collapsed": true,
+      "items": [
+        {
+          "id": "cgczgu",
+          "label": "6.1 部署Flink云原生开源版",
+          "type": "doc"
+        },
+        {
+          "id": "pfe2i4ge9m2oksze",
+          "label": "6.2 运维应用整合公共云服务面板",
+          "type": "doc"
+        }
+      ],
+      "label": "6 最佳场景实践",
+      "type": "category"
+    }
+  ]
+}
