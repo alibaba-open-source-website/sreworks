@@ -20,7 +20,7 @@ Docker Desktop是适用于Mac或Windows环境的易于安装的应用程序。Do
 使用Docker Desktop自带的`storageClass: hostpath`作为存储，关闭默认的存储类。
 ```bash
 # 下载sreworks到本地
-git clone http://github.com/alibaba/sreworks.git -b v1.4 sreworks
+git clone http://github.com/alibaba/sreworks.git -b v1.5 sreworks
 cd sreworks/chart/sreworks-chart
 
 # 安装SREWorks
